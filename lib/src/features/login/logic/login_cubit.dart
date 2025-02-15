@@ -1,18 +1,18 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:mgr_frontend/src/datasource/models/api_response/api_response.dart';
-import 'package:mgr_frontend/src/datasource/repositories/example_repository.dart';
+import 'package:mgr_frontend/src/datasource/repositories/login_repository.dart';
 import 'package:mgr_frontend/src/shared/locator.dart';
 
 part 'login_cubit.freezed.dart';
 part 'login_state.dart';
 
 class LoginCubit extends Cubit<LoginState> {
-  final ExampleRepository _exampleRepository;
+  final LoginRepository _loginRepository;
 
   LoginCubit({
-    ExampleRepository? exampleRepository,
-  })  : _exampleRepository = exampleRepository ?? locator<ExampleRepository>(),
+    LoginRepository? loginRepository,
+  })  : _loginRepository = loginRepository ?? locator<LoginRepository>(),
         super(LoginState.initial(email: '', password: ''));
 
   void onEmailChanged(String email) {
@@ -26,7 +26,8 @@ class LoginCubit extends Cubit<LoginState> {
   void login() async {
     emit(LoginState.loading(email: state.email, password: state.password));
 
-    final response = await _exampleRepository.getExample();
+    final response = await _loginRepository.getToken(state.email, state.password);
+    await _loginRepository.getUser();
     response.when(
         success: (data) => emit(LoginState.sucess(
             email: state.email, password: state.password, response: data)),
