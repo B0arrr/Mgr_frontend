@@ -35,4 +35,8 @@ class LoginRepository extends BaseRepository {
       return ApiResponse.success(response);
     });
   }
+
+  Future<void> logout() async {
+    await _localStorage.clear();
+  }
 }

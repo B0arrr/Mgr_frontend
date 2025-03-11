@@ -11,6 +11,14 @@
   "login_googleBtnLabel": "Sign in with Google",
   "login_appleBtnLabel": "Sign in with Apple",
   "login_submitBtnLabel": "Login",
+  "root_home": "Home",
+  "root_settings": "Settings",
+  "root_profile": "Profile",
+  "root_list_header": "Functionalities",
+  "root_list_item1": "Item 1",
+
+  "title": "Test",
+  "logout": "Logout",
 
   "loadingDialog_content": "Please wait...",
 

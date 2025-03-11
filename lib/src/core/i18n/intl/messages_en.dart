@@ -40,6 +40,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "login_subtitle": MessageLookupByLibrary.simpleMessage(
             "Let\'s continue where we left off."),
         "login_title": MessageLookupByLibrary.simpleMessage("Login"),
-        "or": MessageLookupByLibrary.simpleMessage("OR")
+        "logout": MessageLookupByLibrary.simpleMessage("Logout"),
+        "or": MessageLookupByLibrary.simpleMessage("OR"),
+        "root_home": MessageLookupByLibrary.simpleMessage("Home"),
+        "root_list_header":
+            MessageLookupByLibrary.simpleMessage("Functionalities"),
+        "root_list_item1": MessageLookupByLibrary.simpleMessage("Item 1"),
+        "root_profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "root_settings": MessageLookupByLibrary.simpleMessage("Settings"),
+        "title": MessageLookupByLibrary.simpleMessage("Test")
       };
 }

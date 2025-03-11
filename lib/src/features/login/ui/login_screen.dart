@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:mgr_frontend/gen/assets.gen.dart';
 import 'package:mgr_frontend/src/core/i18n/l10n.dart';
+import 'package:mgr_frontend/src/core/routing/app_router.dart';
 import 'package:mgr_frontend/src/core/theme/dimens.dart';
 import 'package:mgr_frontend/src/features/login/logic/login_cubit.dart';
 import 'package:mgr_frontend/src/shared/components/atoms/dividers/labeled_divider.dart';
@@ -50,8 +51,10 @@ class _LoginScreenState extends State<LoginScreen> {
       listener: (context, state) {
         state.whenOrNull(
             loading: (email, password) => LoadingDialog.show(context: context),
-            sucess: (email, password, response) =>
-                LoadingDialog.hide(context: context),
+            sucess: (email, password, response) {
+              LoadingDialog.hide(context: context);
+              context.router.replace(RootRoute());
+            },
             error: (email, password, error) =>
                 LoadingDialog.hide(context: context));
       },
@@ -159,5 +162,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  void _onLogin() => context.read<LoginCubit>().login();
+  void _onLogin() {
+    context.read<LoginCubit>().login();
+  }
 }

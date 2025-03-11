@@ -150,6 +150,76 @@ class I18n {
     );
   }
 
+  /// `Home`
+  String get root_home {
+    return Intl.message(
+      'Home',
+      name: 'root_home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get root_settings {
+    return Intl.message(
+      'Settings',
+      name: 'root_settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get root_profile {
+    return Intl.message(
+      'Profile',
+      name: 'root_profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Functionalities`
+  String get root_list_header {
+    return Intl.message(
+      'Functionalities',
+      name: 'root_list_header',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Item 1`
+  String get root_list_item1 {
+    return Intl.message(
+      'Item 1',
+      name: 'root_list_item1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Test`
+  String get title {
+    return Intl.message(
+      'Test',
+      name: 'title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Logout`
+  String get logout {
+    return Intl.message(
+      'Logout',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Please wait...`
   String get loadingDialog_content {
     return Intl.message(

@@ -34,4 +34,9 @@ class LoginCubit extends Cubit<LoginState> {
         error: (error) => emit(LoginState.error(
             email: state.email, password: state.password, error: error)));
   }
+
+  void logout() async {
+    emit(LoginState.initial(email: '', password: ''));
+    await _loginRepository.logout();
+  }
 }
