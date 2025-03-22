@@ -22,6 +22,11 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "form_password_not_match":
+            MessageLookupByLibrary.simpleMessage("Passwords do not match!"),
+        "form_submitted": MessageLookupByLibrary.simpleMessage(
+            "Form successfully submitted!"),
+        "home_title": MessageLookupByLibrary.simpleMessage("Home"),
         "loadingDialog_content":
             MessageLookupByLibrary.simpleMessage("Please wait..."),
         "login_appleBtnLabel":
@@ -42,12 +47,67 @@ class MessageLookup extends MessageLookupByLibrary {
         "login_title": MessageLookupByLibrary.simpleMessage("Login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "or": MessageLookupByLibrary.simpleMessage("OR"),
+        "password_change_passwordHint":
+            MessageLookupByLibrary.simpleMessage("************"),
+        "password_change_passwordLabel":
+            MessageLookupByLibrary.simpleMessage("Password"),
+        "password_change_passwordRepeatedHint":
+            MessageLookupByLibrary.simpleMessage("************"),
+        "password_change_passwordRepeatedLabel":
+            MessageLookupByLibrary.simpleMessage("Repeat Password"),
+        "password_change_submitBtnLabel":
+            MessageLookupByLibrary.simpleMessage("Change Password"),
+        "password_change_title":
+            MessageLookupByLibrary.simpleMessage("Password Change"),
+        "profile_changePassword":
+            MessageLookupByLibrary.simpleMessage("Change password"),
+        "profile_emailHint":
+            MessageLookupByLibrary.simpleMessage("Ex: KpNqg@example.com"),
+        "profile_emailLabel": MessageLookupByLibrary.simpleMessage("Email"),
+        "profile_firstNameHint": MessageLookupByLibrary.simpleMessage("John"),
+        "profile_firstNameLabel":
+            MessageLookupByLibrary.simpleMessage("First Name"),
+        "profile_lastNameHint": MessageLookupByLibrary.simpleMessage("Doe"),
+        "profile_lastNameLabel":
+            MessageLookupByLibrary.simpleMessage("Last Name"),
+        "profile_passwordHint":
+            MessageLookupByLibrary.simpleMessage("************"),
+        "profile_passwordLabel":
+            MessageLookupByLibrary.simpleMessage("Password"),
+        "profile_submitBtnLabel": MessageLookupByLibrary.simpleMessage("Save"),
+        "profile_title": MessageLookupByLibrary.simpleMessage("Profile"),
         "root_home": MessageLookupByLibrary.simpleMessage("Home"),
         "root_list_header":
             MessageLookupByLibrary.simpleMessage("Functionalities"),
         "root_list_item1": MessageLookupByLibrary.simpleMessage("Item 1"),
         "root_profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "root_settings": MessageLookupByLibrary.simpleMessage("Settings"),
-        "title": MessageLookupByLibrary.simpleMessage("Test")
+        "settings_title": MessageLookupByLibrary.simpleMessage("Settings"),
+        "title": MessageLookupByLibrary.simpleMessage("Test"),
+        "validator_email":
+            MessageLookupByLibrary.simpleMessage("Email is required"),
+        "validator_emailValid":
+            MessageLookupByLibrary.simpleMessage("Enter a valid email address"),
+        "validator_name":
+            MessageLookupByLibrary.simpleMessage("First Name is required"),
+        "validator_nameOnlyLetters": MessageLookupByLibrary.simpleMessage(
+            "Last Name should contain only letters"),
+        "validator_password":
+            MessageLookupByLibrary.simpleMessage("Password is required"),
+        "validator_passwordLength": MessageLookupByLibrary.simpleMessage(
+            "Password must be at least 8 characters long"),
+        "validator_passwordLowercase": MessageLookupByLibrary.simpleMessage(
+            "Password must contain at least one lowercase letter"),
+        "validator_passwordNumber": MessageLookupByLibrary.simpleMessage(
+            "Password must contain at least one number"),
+        "validator_passwordSpecialCharacter":
+            MessageLookupByLibrary.simpleMessage(
+                "Password must contain at least one special character"),
+        "validator_passwordUppercase": MessageLookupByLibrary.simpleMessage(
+            "Password must contain at least one uppercase letter"),
+        "validator_surname":
+            MessageLookupByLibrary.simpleMessage("Last Name is required"),
+        "validator_surnameOnlyLetters": MessageLookupByLibrary.simpleMessage(
+            "Last Name should contain only letters")
       };
 }

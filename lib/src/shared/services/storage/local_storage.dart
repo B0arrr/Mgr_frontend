@@ -1,3 +1,4 @@
+import 'package:mgr_frontend/src/datasource/models/User/user.dart';
 import 'package:mgr_frontend/src/shared/services/storage/storage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -29,4 +30,16 @@ class LocalStorage extends Storage {
   @override
   Future<void> saveToken({required String value}) async =>
       await _sharedPreferences.setString('token', value);
+
+  @override
+  Future<User?> getUser() {
+    // TODO: implement getUser
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> saveUser({required User user}) {
+    // TODO: implement saveUser
+    throw UnimplementedError();
+  }
 }

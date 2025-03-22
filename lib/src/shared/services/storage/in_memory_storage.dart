@@ -1,3 +1,6 @@
+import 'dart:convert';
+
+import 'package:mgr_frontend/src/datasource/models/User/user.dart';
 import 'package:mgr_frontend/src/shared/services/storage/storage.dart';
 
 class InMemoryStorage extends Storage {
@@ -25,4 +28,19 @@ class InMemoryStorage extends Storage {
   @override
   Future<void> saveToken({required String value}) async =>
       _storage['token'] = value;
+
+  @override
+  Future<User?> getUser() async {
+    final userJson = _storage['user'] as String?;
+    if (userJson == null) return null;
+
+    final Map<String, dynamic> userMap = jsonDecode(userJson);
+    return User.fromJson(userMap);
+  }
+
+  @override
+  Future<void> saveUser({required User user}) async {
+    final userJson = jsonEncode(user.toJson());
+    _storage['user'] = userJson;
+  }
 }

@@ -14,6 +14,7 @@ import 'package:mgr_frontend/src/shared/components/dialogs/dialog_builder.dart';
 import 'package:mgr_frontend/src/shared/components/forms/input.dart';
 import 'package:mgr_frontend/src/shared/components/gap.dart';
 import 'package:mgr_frontend/src/shared/extensions/context_extensions.dart';
+import 'package:mgr_frontend/src/shared/functions/handlers.dart';
 
 @RoutePage()
 class LoginScreen extends StatefulWidget implements AutoRouteWrapper {
@@ -55,8 +56,10 @@ class _LoginScreenState extends State<LoginScreen> {
               LoadingDialog.hide(context: context);
               context.router.replace(RootRoute());
             },
-            error: (email, password, error) =>
-                LoadingDialog.hide(context: context));
+            error: (email, password, error) {
+              handleError(context, error);
+              LoadingDialog.hide(context: context);
+            });
       },
       child: Scaffold(
         appBar: AppBar(
@@ -68,12 +71,16 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               const Gap.vertical(height: Dimens.tripleSpacing),
               Text(
-                I18n.of(context).login_title,
+                I18n
+                    .of(context)
+                    .login_title,
                 style: context.textTheme.titleLarge,
               ),
               const Gap.vertical(height: Dimens.minSpacing),
               Text(
-                I18n.of(context).login_subtitle,
+                I18n
+                    .of(context)
+                    .login_subtitle,
                 style: context.textTheme.bodyMedium,
               ),
               const Gap.vertical(height: Dimens.doubleSpacing),
@@ -86,9 +93,15 @@ class _LoginScreenState extends State<LoginScreen> {
                       Input(
                         autofillHints: const [AutofillHints.email],
                         controller: _emailController,
-                        labelText: I18n.of(context).login_emailLabel,
-                        hintText: I18n.of(context).login_emailHint,
-                        onChanged: context.read<LoginCubit>().onEmailChanged,
+                        labelText: I18n
+                            .of(context)
+                            .login_emailLabel,
+                        hintText: I18n
+                            .of(context)
+                            .login_emailHint,
+                        onChanged: context
+                            .read<LoginCubit>()
+                            .onEmailChanged,
                         textInputAction: TextInputAction.next,
                       ),
                       const Gap.vertical(height: Dimens.spacing),
@@ -96,13 +109,21 @@ class _LoginScreenState extends State<LoginScreen> {
                         autofillHints: const [AutofillHints.password],
                         controller: _passwordController,
                         isPassword: !_isPasswordVisible,
-                        labelText: I18n.of(context).login_passwordLabel,
-                        hintText: I18n.of(context).login_passwordHint,
-                        onChanged: context.read<LoginCubit>().onPasswordChanged,
+                        labelText: I18n
+                            .of(context)
+                            .login_passwordLabel,
+                        hintText: I18n
+                            .of(context)
+                            .login_passwordHint,
+                        onChanged: context
+                            .read<LoginCubit>()
+                            .onPasswordChanged,
                         textInputAction: TextInputAction.done,
                         suffixIcon: IconButton(
-                          onPressed: () => setState(
-                              () => _isPasswordVisible = !_isPasswordVisible),
+                          onPressed: () =>
+                              setState(
+                                      () =>
+                                  _isPasswordVisible = !_isPasswordVisible),
                           icon: Icon(
                             _isPasswordVisible
                                 ? IconsaxPlusBroken.eye
@@ -121,17 +142,23 @@ class _LoginScreenState extends State<LoginScreen> {
                 alignment: Alignment.centerRight,
                 child: TextButton(
                   onPressed: () {},
-                  child: Text(I18n.of(context).login_forgotPasswordLabel),
+                  child: Text(I18n
+                      .of(context)
+                      .login_forgotPasswordLabel),
                 ),
               ),
               const Gap.vertical(height: Dimens.spacing),
               Button.primary(
-                title: I18n.of(context).login_submitBtnLabel,
+                title: I18n
+                    .of(context)
+                    .login_submitBtnLabel,
                 onPressed: _onLogin,
               ),
               const Gap.vertical(height: Dimens.doubleSpacing),
               LabeledDivider(
-                label: I18n.of(context).or,
+                label: I18n
+                    .of(context)
+                    .or,
               ),
               const Gap.vertical(height: Dimens.doubleSpacing),
               Button.outline(
@@ -140,7 +167,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   width: Dimens.iconSize,
                   height: Dimens.iconSize,
                 ),
-                title: I18n.of(context).login_googleBtnLabel,
+                title: I18n
+                    .of(context)
+                    .login_googleBtnLabel,
                 onPressed: () {},
               ),
               const Gap.vertical(height: Dimens.spacing),
@@ -152,7 +181,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   width: Dimens.iconSize,
                   height: Dimens.iconSize,
                 ),
-                title: I18n.of(context).login_appleBtnLabel,
+                title: I18n
+                    .of(context)
+                    .login_appleBtnLabel,
                 onPressed: () {},
               )
             ],

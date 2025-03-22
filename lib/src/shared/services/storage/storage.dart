@@ -1,3 +1,5 @@
+import 'package:mgr_frontend/src/datasource/models/User/user.dart';
+
 abstract class Storage {
   Future<void> init();
 
@@ -12,4 +14,8 @@ abstract class Storage {
   Future<String> getToken();
 
   Future<void> saveToken({required String value});
+
+  Future<User?> getUser();
+
+  Future<void> saveUser({required User user});
 }

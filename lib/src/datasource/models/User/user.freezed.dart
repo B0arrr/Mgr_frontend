@@ -21,12 +21,20 @@ User _$UserFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$User {
   int get id => throw _privateConstructorUsedError;
+  set id(int value) => throw _privateConstructorUsedError;
   String get first_name => throw _privateConstructorUsedError;
+  set first_name(String value) => throw _privateConstructorUsedError;
   String get last_name => throw _privateConstructorUsedError;
+  set last_name(String value) => throw _privateConstructorUsedError;
   String get email => throw _privateConstructorUsedError;
+  set email(String value) => throw _privateConstructorUsedError;
   String get password => throw _privateConstructorUsedError;
+  set password(String value) => throw _privateConstructorUsedError;
   bool get is_active => throw _privateConstructorUsedError;
+  set is_active(bool value) => throw _privateConstructorUsedError;
   bool get has_flexible_working_hours => throw _privateConstructorUsedError;
+  set has_flexible_working_hours(bool value) =>
+      throw _privateConstructorUsedError;
 
   /// Serializes this User to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -181,7 +189,7 @@ class __$$UserImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$UserImpl implements _User {
-  const _$UserImpl(
+  _$UserImpl(
       {required this.id,
       required this.first_name,
       required this.last_name,
@@ -194,50 +202,24 @@ class _$UserImpl implements _User {
       _$$UserImplFromJson(json);
 
   @override
-  final int id;
+  int id;
   @override
-  final String first_name;
+  String first_name;
   @override
-  final String last_name;
+  String last_name;
   @override
-  final String email;
+  String email;
   @override
-  final String password;
+  String password;
   @override
-  final bool is_active;
+  bool is_active;
   @override
-  final bool has_flexible_working_hours;
+  bool has_flexible_working_hours;
 
   @override
   String toString() {
     return 'User(id: $id, first_name: $first_name, last_name: $last_name, email: $email, password: $password, is_active: $is_active, has_flexible_working_hours: $has_flexible_working_hours)';
   }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$UserImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.first_name, first_name) ||
-                other.first_name == first_name) &&
-            (identical(other.last_name, last_name) ||
-                other.last_name == last_name) &&
-            (identical(other.email, email) || other.email == email) &&
-            (identical(other.password, password) ||
-                other.password == password) &&
-            (identical(other.is_active, is_active) ||
-                other.is_active == is_active) &&
-            (identical(other.has_flexible_working_hours,
-                    has_flexible_working_hours) ||
-                other.has_flexible_working_hours ==
-                    has_flexible_working_hours));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, first_name, last_name, email,
-      password, is_active, has_flexible_working_hours);
 
   /// Create a copy of User
   /// with the given fields replaced by the non-null parameter values.
@@ -256,31 +238,38 @@ class _$UserImpl implements _User {
 }
 
 abstract class _User implements User {
-  const factory _User(
-      {required final int id,
-      required final String first_name,
-      required final String last_name,
-      required final String email,
-      required final String password,
-      required final bool is_active,
-      required final bool has_flexible_working_hours}) = _$UserImpl;
+  factory _User(
+      {required int id,
+      required String first_name,
+      required String last_name,
+      required String email,
+      required String password,
+      required bool is_active,
+      required bool has_flexible_working_hours}) = _$UserImpl;
 
   factory _User.fromJson(Map<String, dynamic> json) = _$UserImpl.fromJson;
 
   @override
   int get id;
+  set id(int value);
   @override
   String get first_name;
+  set first_name(String value);
   @override
   String get last_name;
+  set last_name(String value);
   @override
   String get email;
+  set email(String value);
   @override
   String get password;
+  set password(String value);
   @override
   bool get is_active;
+  set is_active(bool value);
   @override
   bool get has_flexible_working_hours;
+  set has_flexible_working_hours(bool value);
 
   /// Create a copy of User
   /// with the given fields replaced by the non-null parameter values.

@@ -3,9 +3,9 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'user.freezed.dart';
 part 'user.g.dart';
 
-@freezed
+@unfreezed
 class User with _$User {
-  const factory User({
+  factory User({
     required int id,
     required String first_name,
     required String last_name,

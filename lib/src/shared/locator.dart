@@ -4,8 +4,10 @@ import 'package:mgr_frontend/src/core/routing/app_router.dart';
 import 'package:mgr_frontend/src/datasource/http/dio_config.dart';
 import 'package:mgr_frontend/src/datasource/http/example_api.dart';
 import 'package:mgr_frontend/src/datasource/http/login_api.dart';
+import 'package:mgr_frontend/src/datasource/http/user_api.dart';
 import 'package:mgr_frontend/src/datasource/repositories/example_repository.dart';
 import 'package:mgr_frontend/src/datasource/repositories/login_repository.dart';
+import 'package:mgr_frontend/src/datasource/repositories/user_repository.dart';
 import 'package:mgr_frontend/src/shared/services/app_logger.dart';
 import 'package:mgr_frontend/src/shared/services/storage/in_memory_storage.dart';
 import 'package:mgr_frontend/src/shared/services/storage/storage.dart';
@@ -20,4 +22,7 @@ final GetIt locator = GetIt.instance
   ..registerLazySingleton(() => ExampleApi(dio: locator<DioConfig>().dio))
   ..registerLazySingleton(() => ExampleRepository())
   ..registerLazySingleton(() => LoginApi(dio: locator<DioConfig>().dio))
-  ..registerLazySingleton(() => LoginRepository());
+  ..registerLazySingleton(() => LoginRepository())
+  ..registerLazySingleton(() =>
+      UserApi(dio: locator<DioConfig>().dio, localStorage: locator<Storage>()))
+  ..registerLazySingleton(() => UserRepository());

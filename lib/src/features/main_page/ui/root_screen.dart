@@ -5,7 +5,8 @@ import 'package:mgr_frontend/src/core/i18n/l10n.dart';
 import 'package:mgr_frontend/src/core/routing/app_router.dart';
 import 'package:mgr_frontend/src/features/login/logic/login_cubit.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/constants/nav_bar_items.dart';
-import 'package:mgr_frontend/src/features/main_page/logic/navigation_cubit.dart';
+import 'package:mgr_frontend/src/features/main_page/logic/navigation/navigation_cubit.dart';
+import 'package:mgr_frontend/src/features/main_page/logic/profile/profile_cubit.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/home_screen.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/profile_screen.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/settings_screen.dart';
@@ -106,7 +107,7 @@ class _RootScreenState extends State<RootScreen> {
           } else if (state.navbarItem == NavbarItem.settings) {
             return SettingsScreen();
           } else if (state.navbarItem == NavbarItem.profile) {
-            return ProfileScreen();
+            return BlocProvider(create: (_) => ProfileCubit()..loadProfile(), child: ProfileScreen(),);
           }
           return Container();
         },

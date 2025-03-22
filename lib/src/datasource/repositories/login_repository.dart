@@ -31,7 +31,7 @@ class LoginRepository extends BaseRepository {
   Future<ApiResponse<User, ApiError>> getUser() async {
     return runApiCall(call: () async {
       final response = await _loginApi.getUser();
-      await _localStorage.write(key: 'user', value: response);
+      await _localStorage.saveUser(user: response);
       return ApiResponse.success(response);
     });
   }

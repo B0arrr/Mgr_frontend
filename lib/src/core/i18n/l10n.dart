@@ -200,6 +200,336 @@ class I18n {
     );
   }
 
+  /// `Home`
+  String get home_title {
+    return Intl.message(
+      'Home',
+      name: 'home_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings_title {
+    return Intl.message(
+      'Settings',
+      name: 'settings_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile_title {
+    return Intl.message(
+      'Profile',
+      name: 'profile_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `First Name`
+  String get profile_firstNameLabel {
+    return Intl.message(
+      'First Name',
+      name: 'profile_firstNameLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `John`
+  String get profile_firstNameHint {
+    return Intl.message(
+      'John',
+      name: 'profile_firstNameHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Last Name`
+  String get profile_lastNameLabel {
+    return Intl.message(
+      'Last Name',
+      name: 'profile_lastNameLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Doe`
+  String get profile_lastNameHint {
+    return Intl.message(
+      'Doe',
+      name: 'profile_lastNameHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get profile_emailLabel {
+    return Intl.message(
+      'Email',
+      name: 'profile_emailLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ex: KpNqg@example.com`
+  String get profile_emailHint {
+    return Intl.message(
+      'Ex: KpNqg@example.com',
+      name: 'profile_emailHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get profile_passwordLabel {
+    return Intl.message(
+      'Password',
+      name: 'profile_passwordLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `************`
+  String get profile_passwordHint {
+    return Intl.message(
+      '************',
+      name: 'profile_passwordHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change password`
+  String get profile_changePassword {
+    return Intl.message(
+      'Change password',
+      name: 'profile_changePassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get profile_submitBtnLabel {
+    return Intl.message(
+      'Save',
+      name: 'profile_submitBtnLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password Change`
+  String get password_change_title {
+    return Intl.message(
+      'Password Change',
+      name: 'password_change_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get password_change_passwordLabel {
+    return Intl.message(
+      'Password',
+      name: 'password_change_passwordLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `************`
+  String get password_change_passwordHint {
+    return Intl.message(
+      '************',
+      name: 'password_change_passwordHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Repeat Password`
+  String get password_change_passwordRepeatedLabel {
+    return Intl.message(
+      'Repeat Password',
+      name: 'password_change_passwordRepeatedLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `************`
+  String get password_change_passwordRepeatedHint {
+    return Intl.message(
+      '************',
+      name: 'password_change_passwordRepeatedHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change Password`
+  String get password_change_submitBtnLabel {
+    return Intl.message(
+      'Change Password',
+      name: 'password_change_submitBtnLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `First Name is required`
+  String get validator_name {
+    return Intl.message(
+      'First Name is required',
+      name: 'validator_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Last Name should contain only letters`
+  String get validator_nameOnlyLetters {
+    return Intl.message(
+      'Last Name should contain only letters',
+      name: 'validator_nameOnlyLetters',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Last Name is required`
+  String get validator_surname {
+    return Intl.message(
+      'Last Name is required',
+      name: 'validator_surname',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Last Name should contain only letters`
+  String get validator_surnameOnlyLetters {
+    return Intl.message(
+      'Last Name should contain only letters',
+      name: 'validator_surnameOnlyLetters',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email is required`
+  String get validator_email {
+    return Intl.message(
+      'Email is required',
+      name: 'validator_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter a valid email address`
+  String get validator_emailValid {
+    return Intl.message(
+      'Enter a valid email address',
+      name: 'validator_emailValid',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password is required`
+  String get validator_password {
+    return Intl.message(
+      'Password is required',
+      name: 'validator_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must be at least 8 characters long`
+  String get validator_passwordLength {
+    return Intl.message(
+      'Password must be at least 8 characters long',
+      name: 'validator_passwordLength',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must contain at least one uppercase letter`
+  String get validator_passwordUppercase {
+    return Intl.message(
+      'Password must contain at least one uppercase letter',
+      name: 'validator_passwordUppercase',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must contain at least one lowercase letter`
+  String get validator_passwordLowercase {
+    return Intl.message(
+      'Password must contain at least one lowercase letter',
+      name: 'validator_passwordLowercase',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must contain at least one number`
+  String get validator_passwordNumber {
+    return Intl.message(
+      'Password must contain at least one number',
+      name: 'validator_passwordNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must contain at least one special character`
+  String get validator_passwordSpecialCharacter {
+    return Intl.message(
+      'Password must contain at least one special character',
+      name: 'validator_passwordSpecialCharacter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Form successfully submitted!`
+  String get form_submitted {
+    return Intl.message(
+      'Form successfully submitted!',
+      name: 'form_submitted',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Passwords do not match!`
+  String get form_password_not_match {
+    return Intl.message(
+      'Passwords do not match!',
+      name: 'form_password_not_match',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Test`
   String get title {
     return Intl.message(

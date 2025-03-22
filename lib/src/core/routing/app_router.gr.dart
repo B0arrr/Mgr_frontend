@@ -29,6 +29,25 @@ class LoginRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [PasswordChangeScreen]
+class PasswordChangeRoute extends PageRouteInfo<void> {
+  const PasswordChangeRoute({List<PageRouteInfo>? children})
+      : super(
+          PasswordChangeRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'PasswordChangeRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return WrappedRoute(child: const PasswordChangeScreen());
+    },
+  );
+}
+
+/// generated route for
 /// [RootScreen]
 class RootRoute extends PageRouteInfo<void> {
   const RootRoute({List<PageRouteInfo>? children})
