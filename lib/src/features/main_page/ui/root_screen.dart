@@ -7,12 +7,11 @@ import 'package:mgr_frontend/src/features/login/logic/login_cubit.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/constants/nav_bar_items.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/navigation/navigation_cubit.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/profile/profile_cubit.dart';
+import 'package:mgr_frontend/src/features/main_page/logic/root_cubit.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/home_screen.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/profile_screen.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/settings_screen.dart';
 import 'package:mgr_frontend/src/shared/extensions/context_extensions.dart';
-
-import '../logic/root_cubit.dart';
 
 @RoutePage()
 class RootScreen extends StatefulWidget implements AutoRouteWrapper {
@@ -28,6 +27,7 @@ class RootScreen extends StatefulWidget implements AutoRouteWrapper {
         BlocProvider(create: (_) => RootCubit()),
         BlocProvider(create: (_) => NavigationCubit()),
         BlocProvider(create: (_) => LoginCubit()),
+        BlocProvider(create: (_) => ProfileCubit()),
       ],
       child: this,
     );

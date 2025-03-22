@@ -82,6 +82,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "root_list_item1": MessageLookupByLibrary.simpleMessage("Item 1"),
         "root_profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "root_settings": MessageLookupByLibrary.simpleMessage("Settings"),
+        "settings_darkModeSubtitle":
+            MessageLookupByLibrary.simpleMessage("Enable dark mode"),
+        "settings_darkModeTitle":
+            MessageLookupByLibrary.simpleMessage("Dark Mode"),
+        "settings_en": MessageLookupByLibrary.simpleMessage("English"),
+        "settings_languageSubtitle":
+            MessageLookupByLibrary.simpleMessage("Select your language"),
+        "settings_languageTitle":
+            MessageLookupByLibrary.simpleMessage("Language"),
         "settings_title": MessageLookupByLibrary.simpleMessage("Settings"),
         "title": MessageLookupByLibrary.simpleMessage("Test"),
         "validator_email":

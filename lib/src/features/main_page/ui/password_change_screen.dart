@@ -5,14 +5,13 @@ import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:mgr_frontend/src/core/i18n/l10n.dart';
 import 'package:mgr_frontend/src/core/theme/dimens.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/password_change/password_change_cubit.dart';
+import 'package:mgr_frontend/src/shared/components/buttons/button.dart';
 import 'package:mgr_frontend/src/shared/components/dialogs/dialog_builder.dart';
 import 'package:mgr_frontend/src/shared/components/forms/input.dart';
 import 'package:mgr_frontend/src/shared/components/gap.dart';
 import 'package:mgr_frontend/src/shared/extensions/context_extensions.dart';
 import 'package:mgr_frontend/src/shared/functions/handlers.dart';
 import 'package:mgr_frontend/src/shared/functions/validators.dart';
-
-import '../../../shared/components/buttons/button.dart';
 
 @RoutePage()
 class PasswordChangeScreen extends StatefulWidget implements AutoRouteWrapper {
@@ -80,7 +79,7 @@ class _PasswordChangeScreenState extends State<PasswordChangeScreen> {
               I18n.of(context).password_change_title,
               style: context.textTheme.titleLarge,
             ),
-            Gap.vertical(height: Dimens.doubleSpacing),
+            const Gap.vertical(height: Dimens.doubleSpacing),
             AutofillGroup(
               child: Form(
                 key: _formKey,
@@ -108,7 +107,7 @@ class _PasswordChangeScreenState extends State<PasswordChangeScreen> {
                       ),
                       validator: validatePassword,
                     ),
-                    Gap.vertical(height: Dimens.spacing),
+                    const Gap.vertical(height: Dimens.spacing),
                     Input(
                       autofillHints: const [AutofillHints.password],
                       controller: _passwordRepeatedController,

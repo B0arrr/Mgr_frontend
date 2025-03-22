@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:mgr_frontend/src/core/environment.dart';
+import 'package:mgr_frontend/src/shared/locator.dart';
 import 'package:mgr_frontend/src/shared/services/storage/local_storage.dart';
+import 'package:mgr_frontend/src/shared/services/storage/storage.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
-import '../../shared/locator.dart';
-import '../../shared/services/storage/storage.dart';
 
 class DioConfig {
   final Dio dio;

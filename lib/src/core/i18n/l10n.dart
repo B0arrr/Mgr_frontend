@@ -220,6 +220,56 @@ class I18n {
     );
   }
 
+  /// `Dark Mode`
+  String get settings_darkModeTitle {
+    return Intl.message(
+      'Dark Mode',
+      name: 'settings_darkModeTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enable dark mode`
+  String get settings_darkModeSubtitle {
+    return Intl.message(
+      'Enable dark mode',
+      name: 'settings_darkModeSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Language`
+  String get settings_languageTitle {
+    return Intl.message(
+      'Language',
+      name: 'settings_languageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select your language`
+  String get settings_languageSubtitle {
+    return Intl.message(
+      'Select your language',
+      name: 'settings_languageSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `English`
+  String get settings_en {
+    return Intl.message(
+      'English',
+      name: 'settings_en',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Profile`
   String get profile_title {
     return Intl.message(

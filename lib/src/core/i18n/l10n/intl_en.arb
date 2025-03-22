@@ -21,6 +21,11 @@
   "home_title": "Home",
 
   "settings_title": "Settings",
+  "settings_darkModeTitle": "Dark Mode",
+  "settings_darkModeSubtitle": "Enable dark mode",
+  "settings_languageTitle": "Language",
+  "settings_languageSubtitle": "Select your language",
+  "settings_en": "English",
 
   "profile_title": "Profile",
   "profile_firstNameLabel": "First Name",
