@@ -10,6 +10,25 @@
 part of 'app_router.dart';
 
 /// generated route for
+/// [AddressManagementScreen]
+class AddressManagementRoute extends PageRouteInfo<void> {
+  const AddressManagementRoute({List<PageRouteInfo>? children})
+      : super(
+          AddressManagementRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'AddressManagementRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return WrappedRoute(child: const AddressManagementScreen());
+    },
+  );
+}
+
+/// generated route for
 /// [LoginScreen]
 class LoginRoute extends PageRouteInfo<void> {
   const LoginRoute({List<PageRouteInfo>? children})

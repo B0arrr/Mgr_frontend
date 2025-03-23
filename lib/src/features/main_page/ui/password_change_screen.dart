@@ -18,7 +18,7 @@ class PasswordChangeScreen extends StatefulWidget implements AutoRouteWrapper {
   const PasswordChangeScreen({super.key});
 
   @override
-  State<StatefulWidget> createState() => _PasswordChangeScreenState();
+  State<PasswordChangeScreen> createState() => _PasswordChangeScreenState();
 
   @override
   Widget wrappedRoute(BuildContext context) {

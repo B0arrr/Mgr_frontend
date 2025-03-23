@@ -53,6 +53,7 @@ class _RootScreenState extends State<RootScreen> {
               title: Text(I18n.of(context).root_list_item1),
               onTap: () {
                 Navigator.pop(context);
+                context.router.push(AddressManagementRoute());
               },
             ),
             Divider(),
