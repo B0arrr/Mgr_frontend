@@ -190,11 +190,11 @@ class I18n {
     );
   }
 
-  /// `Item 1`
-  String get root_list_item1 {
+  /// `Addresses Management`
+  String get root_list_item_addressesManagement {
     return Intl.message(
-      'Item 1',
-      name: 'root_list_item1',
+      'Addresses Management',
+      name: 'root_list_item_addressesManagement',
       desc: '',
       args: [],
     );
@@ -600,6 +600,26 @@ class I18n {
     );
   }
 
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message(
+      'Save',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Please wait...`
   String get loadingDialog_content {
     return Intl.message(
@@ -615,6 +635,96 @@ class I18n {
     return Intl.message(
       'OR',
       name: 'or',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Address list`
+  String get address_management_title {
+    return Intl.message(
+      'Address list',
+      name: 'address_management_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Address`
+  String get address_management_addButton {
+    return Intl.message(
+      'Add Address',
+      name: 'address_management_addButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Street`
+  String get address_management_alert_dialog_street {
+    return Intl.message(
+      'Street',
+      name: 'address_management_alert_dialog_street',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `City`
+  String get address_management_alert_dialog_city {
+    return Intl.message(
+      'City',
+      name: 'address_management_alert_dialog_city',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `State`
+  String get address_management_alert_dialog_state {
+    return Intl.message(
+      'State',
+      name: 'address_management_alert_dialog_state',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ZIP Code`
+  String get address_management_alert_dialog_zipCode {
+    return Intl.message(
+      'ZIP Code',
+      name: 'address_management_alert_dialog_zipCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Country`
+  String get address_management_alert_dialog_country {
+    return Intl.message(
+      'Country',
+      name: 'address_management_alert_dialog_country',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Address`
+  String get address_management_alert_dialog_add_title {
+    return Intl.message(
+      'Add Address',
+      name: 'address_management_alert_dialog_add_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit Address`
+  String get address_management_alert_dialog_edit_title {
+    return Intl.message(
+      'Edit Address',
+      name: 'address_management_alert_dialog_edit_title',
       desc: '',
       args: [],
     );

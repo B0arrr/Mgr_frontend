@@ -16,7 +16,7 @@
   "root_settings": "Settings",
   "root_profile": "Profile",
   "root_list_header": "Functionalities",
-  "root_list_item1": "Item 1",
+  "root_list_item_addressesManagement": "Addresses Management",
 
   "home_title": "Home",
 
@@ -64,8 +64,20 @@
 
   "title": "Test",
   "logout": "Logout",
+  "cancel": "Cancel",
+  "save": "Save",
 
   "loadingDialog_content": "Please wait...",
 
-  "or": "OR"
+  "or": "OR",
+
+  "address_management_title": "Address list",
+  "address_management_addButton": "Add Address",
+  "address_management_alert_dialog_street": "Street",
+  "address_management_alert_dialog_city": "City",
+  "address_management_alert_dialog_state": "State",
+  "address_management_alert_dialog_zipCode": "ZIP Code",
+  "address_management_alert_dialog_country": "Country",
+  "address_management_alert_dialog_add_title": "Add Address",
+  "address_management_alert_dialog_edit_title": "Edit Address"
 }

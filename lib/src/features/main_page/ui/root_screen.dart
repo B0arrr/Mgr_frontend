@@ -50,9 +50,10 @@ class _RootScreenState extends State<RootScreen> {
               child: Text(I18n.of(context).root_list_header),
             ),
             ListTile(
-              title: Text(I18n.of(context).root_list_item1),
+              title: Text(I18n.of(context).root_list_item_addressesManagement),
               onTap: () {
                 Navigator.pop(context);
+                context.router.push(AddressManagementRoute());
               },
             ),
             Divider(),

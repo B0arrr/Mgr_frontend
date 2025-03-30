@@ -22,6 +22,25 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "address_management_addButton":
+            MessageLookupByLibrary.simpleMessage("Add Address"),
+        "address_management_alert_dialog_add_title":
+            MessageLookupByLibrary.simpleMessage("Add Address"),
+        "address_management_alert_dialog_city":
+            MessageLookupByLibrary.simpleMessage("City"),
+        "address_management_alert_dialog_country":
+            MessageLookupByLibrary.simpleMessage("Country"),
+        "address_management_alert_dialog_edit_title":
+            MessageLookupByLibrary.simpleMessage("Edit Address"),
+        "address_management_alert_dialog_state":
+            MessageLookupByLibrary.simpleMessage("State"),
+        "address_management_alert_dialog_street":
+            MessageLookupByLibrary.simpleMessage("Street"),
+        "address_management_alert_dialog_zipCode":
+            MessageLookupByLibrary.simpleMessage("ZIP Code"),
+        "address_management_title":
+            MessageLookupByLibrary.simpleMessage("Address list"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "form_password_not_match":
             MessageLookupByLibrary.simpleMessage("Passwords do not match!"),
         "form_submitted": MessageLookupByLibrary.simpleMessage(
@@ -79,9 +98,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "root_home": MessageLookupByLibrary.simpleMessage("Home"),
         "root_list_header":
             MessageLookupByLibrary.simpleMessage("Functionalities"),
-        "root_list_item1": MessageLookupByLibrary.simpleMessage("Item 1"),
+        "root_list_item_addressesManagement":
+            MessageLookupByLibrary.simpleMessage("Addresses Management"),
         "root_profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "root_settings": MessageLookupByLibrary.simpleMessage("Settings"),
+        "save": MessageLookupByLibrary.simpleMessage("Save"),
         "settings_darkModeSubtitle":
             MessageLookupByLibrary.simpleMessage("Enable dark mode"),
         "settings_darkModeTitle":
