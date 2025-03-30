@@ -17,6 +17,7 @@
   "root_profile": "Profile",
   "root_list_header": "Functionalities",
   "root_list_item_addressesManagement": "Addresses Management",
+  "root_list_item_companyManagement": "Company Management",
 
   "home_title": "Home",
 
@@ -79,5 +80,12 @@
   "address_management_alert_dialog_zipCode": "ZIP Code",
   "address_management_alert_dialog_country": "Country",
   "address_management_alert_dialog_add_title": "Add Address",
-  "address_management_alert_dialog_edit_title": "Edit Address"
+  "address_management_alert_dialog_edit_title": "Edit Address",
+
+  "company_management_title": "Company List",
+  "company_management_addButton": "Add Company",
+  "company_management_alert_dialog_name": "Name",
+  "company_management_alert_dialog_address": "Address",
+  "company_management_alert_dialog_add_title": "Add Company",
+  "company_management_alert_dialog_edit_title": "Edit Company"
 }

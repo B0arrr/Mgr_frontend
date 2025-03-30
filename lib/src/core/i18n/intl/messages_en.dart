@@ -41,6 +41,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "address_management_title":
             MessageLookupByLibrary.simpleMessage("Address list"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "company_management_addButton":
+            MessageLookupByLibrary.simpleMessage("Add Company"),
+        "company_management_alert_dialog_add_title":
+            MessageLookupByLibrary.simpleMessage("Add Company"),
+        "company_management_alert_dialog_address":
+            MessageLookupByLibrary.simpleMessage("Address"),
+        "company_management_alert_dialog_edit_title":
+            MessageLookupByLibrary.simpleMessage("Edit Company"),
+        "company_management_alert_dialog_name":
+            MessageLookupByLibrary.simpleMessage("Name"),
+        "company_management_title":
+            MessageLookupByLibrary.simpleMessage("Company List"),
         "form_password_not_match":
             MessageLookupByLibrary.simpleMessage("Passwords do not match!"),
         "form_submitted": MessageLookupByLibrary.simpleMessage(
@@ -100,6 +112,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Functionalities"),
         "root_list_item_addressesManagement":
             MessageLookupByLibrary.simpleMessage("Addresses Management"),
+        "root_list_item_companyManagement":
+            MessageLookupByLibrary.simpleMessage("Company Management"),
         "root_profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "root_settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "save": MessageLookupByLibrary.simpleMessage("Save"),

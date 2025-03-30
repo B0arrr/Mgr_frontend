@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mgr_frontend/src/core/i18n/l10n.dart';
+import 'package:mgr_frontend/src/core/theme/dimens.dart';
 import 'package:mgr_frontend/src/datasource/models/Address/address.dart';
 import 'package:mgr_frontend/src/features/address_management/logic/address_management_bloc.dart';
 
@@ -68,7 +69,7 @@ class _AddressManagementScreenState extends State<AddressManagementScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(Dimens.spacing),
               child: ElevatedButton(
                 onPressed: () {
                   _showAddDialog(context);

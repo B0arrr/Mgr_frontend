@@ -200,6 +200,16 @@ class I18n {
     );
   }
 
+  /// `Company Management`
+  String get root_list_item_companyManagement {
+    return Intl.message(
+      'Company Management',
+      name: 'root_list_item_companyManagement',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Home`
   String get home_title {
     return Intl.message(
@@ -725,6 +735,66 @@ class I18n {
     return Intl.message(
       'Edit Address',
       name: 'address_management_alert_dialog_edit_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Company List`
+  String get company_management_title {
+    return Intl.message(
+      'Company List',
+      name: 'company_management_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Company`
+  String get company_management_addButton {
+    return Intl.message(
+      'Add Company',
+      name: 'company_management_addButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get company_management_alert_dialog_name {
+    return Intl.message(
+      'Name',
+      name: 'company_management_alert_dialog_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Address`
+  String get company_management_alert_dialog_address {
+    return Intl.message(
+      'Address',
+      name: 'company_management_alert_dialog_address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Company`
+  String get company_management_alert_dialog_add_title {
+    return Intl.message(
+      'Add Company',
+      name: 'company_management_alert_dialog_add_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit Company`
+  String get company_management_alert_dialog_edit_title {
+    return Intl.message(
+      'Edit Company',
+      name: 'company_management_alert_dialog_edit_title',
       desc: '',
       args: [],
     );

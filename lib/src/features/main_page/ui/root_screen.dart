@@ -56,6 +56,13 @@ class _RootScreenState extends State<RootScreen> {
                 context.router.push(AddressManagementRoute());
               },
             ),
+            ListTile(
+              title: Text(I18n.of(context).root_list_item_companyManagement),
+              onTap: () {
+                Navigator.pop(context);
+                context.router.push(CompanyManagementRoute());
+              },
+            ),
             Divider(),
             ListTile(
               title: Text(I18n.of(context).logout),
