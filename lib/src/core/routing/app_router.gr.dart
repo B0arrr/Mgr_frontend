@@ -48,6 +48,25 @@ class CompanyManagementRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [DepartmentManagementScreen]
+class DepartmentManagementRoute extends PageRouteInfo<void> {
+  const DepartmentManagementRoute({List<PageRouteInfo>? children})
+      : super(
+          DepartmentManagementRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'DepartmentManagementRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return WrappedRoute(child: const DepartmentManagementScreen());
+    },
+  );
+}
+
+/// generated route for
 /// [LoginScreen]
 class LoginRoute extends PageRouteInfo<void> {
   const LoginRoute({List<PageRouteInfo>? children})
