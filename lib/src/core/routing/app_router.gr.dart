@@ -48,6 +48,44 @@ class CompanyManagementRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [DepartmentManagementScreen]
+class DepartmentManagementRoute extends PageRouteInfo<void> {
+  const DepartmentManagementRoute({List<PageRouteInfo>? children})
+      : super(
+          DepartmentManagementRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'DepartmentManagementRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return WrappedRoute(child: const DepartmentManagementScreen());
+    },
+  );
+}
+
+/// generated route for
+/// [EmploymentManagementScreen]
+class EmploymentManagementRoute extends PageRouteInfo<void> {
+  const EmploymentManagementRoute({List<PageRouteInfo>? children})
+      : super(
+          EmploymentManagementRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'EmploymentManagementRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return WrappedRoute(child: const EmploymentManagementScreen());
+    },
+  );
+}
+
+/// generated route for
 /// [LoginScreen]
 class LoginRoute extends PageRouteInfo<void> {
   const LoginRoute({List<PageRouteInfo>? children})
@@ -86,6 +124,25 @@ class PasswordChangeRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [PositionManagementScreen]
+class PositionManagementRoute extends PageRouteInfo<void> {
+  const PositionManagementRoute({List<PageRouteInfo>? children})
+      : super(
+          PositionManagementRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'PositionManagementRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return WrappedRoute(child: const PositionManagementScreen());
+    },
+  );
+}
+
+/// generated route for
 /// [RootScreen]
 class RootRoute extends PageRouteInfo<void> {
   const RootRoute({List<PageRouteInfo>? children})
@@ -100,6 +157,25 @@ class RootRoute extends PageRouteInfo<void> {
     name,
     builder: (data) {
       return WrappedRoute(child: const RootScreen());
+    },
+  );
+}
+
+/// generated route for
+/// [UserManagementScreen]
+class UserManagementRoute extends PageRouteInfo<void> {
+  const UserManagementRoute({List<PageRouteInfo>? children})
+      : super(
+          UserManagementRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'UserManagementRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return WrappedRoute(child: const UserManagementScreen());
     },
   );
 }

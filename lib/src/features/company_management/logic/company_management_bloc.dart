@@ -21,7 +21,7 @@ class CompanyManagementBloc
       : _addressRepository = addressRepository ?? locator<AddressRepository>(),
         _companyRepository = companyRepository ?? locator<CompanyRepository>(),
         super(CompanyManagementState.initial()) {
-    on<_InitCompany>((event, emit) async {
+    on<_InitCompanies>((event, emit) async {
       final response = await _companyRepository.getCompanies();
       response.when(
           success: (data) {
@@ -61,6 +61,8 @@ class CompanyManagementBloc
           },
           error: (err) {});
     });
+
+    add(_InitCompanies());
   }
 
   Future<List<Address>> getAddressList() async {

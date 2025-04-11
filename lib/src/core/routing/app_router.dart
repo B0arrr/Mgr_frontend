@@ -2,9 +2,12 @@ import 'package:auto_route/auto_route.dart';
 import 'package:mgr_frontend/src/core/routing/guards/auth_guard.dart';
 import 'package:mgr_frontend/src/features/address_management/ui/address_management_screen.dart';
 import 'package:mgr_frontend/src/features/company_management/ui/company_management_screen.dart';
+import 'package:mgr_frontend/src/features/department_management/ui/department_management_screen.dart';
+import 'package:mgr_frontend/src/features/employment_management/ui/employment_management_screen.dart';
 import 'package:mgr_frontend/src/features/login/ui/login_screen.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/password_change_screen.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/root_screen.dart';
+import 'package:mgr_frontend/src/features/position_management/ui/position_management_screen.dart';
 
 part 'app_router.gr.dart';
 
@@ -17,5 +20,8 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: PasswordChangeRoute.page, initial: false, guards: [AuthGuard()]),
     AutoRoute(page: AddressManagementRoute.page, initial: false, guards: [AuthGuard()]),
     AutoRoute(page: CompanyManagementRoute.page, initial: false, guards: [AuthGuard()]),
+    AutoRoute(page: DepartmentManagementRoute.page, initial: false, guards: [AuthGuard()]),
+    AutoRoute(page: EmploymentManagementRoute.page, initial: false, guards: [AuthGuard()]),
+    AutoRoute(page: PositionManagementRoute.page, initial: false, guards: [AuthGuard()]),
   ];
 }
