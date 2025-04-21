@@ -5,7 +5,6 @@ import 'package:mgr_frontend/src/shared/services/storage/local_storage.dart';
 import 'package:mgr_frontend/src/shared/services/storage/storage.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
-
 class DioConfig {
   final Dio dio;
   final Storage _localStorage;
@@ -29,13 +28,15 @@ class DioConfig {
           responseBody: true,
         ));
 
-    this.dio.interceptors.add(InterceptorsWrapper(
-      onRequest: (options, handler) async {
-        String? token = await _localStorage.getToken();
-        if (token.isNotEmpty) {
-          options.headers['Authorization'] = 'Bearer $token';
-        }
-        return handler.next(options);
-      }));
+    this
+        .dio
+        .interceptors
+        .add(InterceptorsWrapper(onRequest: (options, handler) async {
+      String? token = await _localStorage.getToken();
+      if (token.isNotEmpty) {
+        options.headers['Authorization'] = 'Bearer $token';
+      }
+      return handler.next(options);
+    }));
   }
 }

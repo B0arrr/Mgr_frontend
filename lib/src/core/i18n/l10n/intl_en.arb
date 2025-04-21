@@ -1,6 +1,5 @@
 {
   "@@locale": "en",
-
   "login_title": "Login",
   "login_subtitle": "Let's continue where we left off.",
   "login_emailLabel": "Email",
@@ -18,6 +17,10 @@
   "root_list_header": "Functionalities",
   "root_list_item_addressesManagement": "Addresses Management",
   "root_list_item_companyManagement": "Company Management",
+  "root_list_item_departmentManagement": "Department Management",
+  "root_list_item_employmentManagement": "Employment Management",
+  "root_list_item_positionManagement": "Position Management",
+  "root_list_item_userManagement": "User Management",
 
   "home_title": "Home",
 
@@ -67,12 +70,11 @@
   "logout": "Logout",
   "cancel": "Cancel",
   "save": "Save",
-
   "loadingDialog_content": "Please wait...",
 
   "or": "OR",
 
-  "address_management_title": "Address list",
+  "address_management_title": "Address List",
   "address_management_addButton": "Add Address",
   "address_management_alert_dialog_street": "Street",
   "address_management_alert_dialog_city": "City",
@@ -87,5 +89,68 @@
   "company_management_alert_dialog_name": "Name",
   "company_management_alert_dialog_address": "Address",
   "company_management_alert_dialog_add_title": "Add Company",
-  "company_management_alert_dialog_edit_title": "Edit Company"
+  "company_management_alert_dialog_edit_title": "Edit Company",
+
+  "department_management_title": "Department List",
+  "department_management_addButton": "Add Department",
+  "department_management_alert_dialog_name": "Name",
+  "department_management_alert_dialog_add_title": "Add Department",
+  "department_management_alert_dialog_edit_title": "Edit Department",
+
+  "employment_management_title": "Employment List",
+  "employment_management_addButton": "Add Employment",
+  "employment_management_alert_dialog_name": "Name",
+  "employment_management_alert_dialog_max_hours_per_day": "Max Hours Per Day",
+  "employment_management_alert_dialog_max_hours_per_week": "Max Hours Per Week",
+  "employment_management_alert_dialog_add_title": "Add Employment",
+  "employment_management_alert_dialog_edit_title": "Edit Employment",
+
+  "position_management_title": "Position List",
+  "position_management_addButton": "Add Position",
+  "position_management_alert_dialog_name": "Name",
+  "position_management_alert_dialog_add_title": "Add Position",
+  "position_management_alert_dialog_edit_title": "Edit Position",
+
+  "user_management_title": "User List",
+  "user_management_addButton": "Add User",
+  "user_management_alert_dialog_firstName": "First Name",
+  "user_management_alert_dialog_lastName": "Last Name",
+  "user_management_alert_dialog_email": "Email",
+  "user_management_alert_dialog_password": "Password",
+  "user_management_alert_dialog_addresses": "Add/Edit Addresses",
+  "user_management_alert_dialog_employments": "Add/Edit Employment",
+  "user_management_alert_dialog_managed_users": "Add/Edit Managed Users",
+  "user_management_alert_dialog_roles": "Add/Edit Roles",
+  "user_management_alert_dialog_add_title": "Add User",
+  "user_management_alert_dialog_edit_title": "Edit User",
+
+  "user_address_management_title": "User Address List",
+  "user_address_management_addButton": "Add Address",
+  "user_address_management_alert_dialog_address": "Address",
+  "user_address_management_alert_dialog_remote_checkbox": "Is Remote",
+  "user_address_management_alert_dialog_add_title": "Add User Addresses",
+  "user_address_management_alert_dialog_edit_title": "Edit User Addresses",
+
+  "user_employment_management_title": "User Employment List",
+  "user_employment_management_addButton": "Add Employment",
+  "user_employment_management_alert_dialog_employment": "Employment",
+  "user_employment_management_alert_dialog_company": "Company",
+  "user_employment_management_alert_dialog_department": "Department",
+  "user_employment_management_alert_dialog_position": "Position",
+  "user_employment_management_alert_dialog_starting_date": "Starting Date",
+  "user_employment_management_alert_dialog_ending_date": "Ending Date",
+  "user_employment_management_alert_dialog_add_title": "Add User Employment",
+  "user_employment_management_alert_dialog_edit_title": "Edit User Employment",
+
+  "user_manager_management_title": "User Manager List",
+  "user_manager_management_addButton": "Add Managed User",
+  "user_manager_management_alert_dialog_user": "User",
+  "user_manager_management_alert_dialog_add_title": "Add Managed User",
+  "user_manager_management_alert_dialog_edit_title": "Edit Managed User",
+
+  "user_role_management_title": "User Role List",
+  "user_role_management_addButton": "Add Role",
+  "user_role_management_alert_dialog_name": "Role",
+  "user_role_management_alert_dialog_add_title": "Add Role",
+  "user_role_management_alert_dialog_edit_title": "Edit Role"
 }

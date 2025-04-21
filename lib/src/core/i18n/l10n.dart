@@ -210,6 +210,46 @@ class I18n {
     );
   }
 
+  /// `Department Management`
+  String get root_list_item_departmentManagement {
+    return Intl.message(
+      'Department Management',
+      name: 'root_list_item_departmentManagement',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Employment Management`
+  String get root_list_item_employmentManagement {
+    return Intl.message(
+      'Employment Management',
+      name: 'root_list_item_employmentManagement',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Position Management`
+  String get root_list_item_positionManagement {
+    return Intl.message(
+      'Position Management',
+      name: 'root_list_item_positionManagement',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User Management`
+  String get root_list_item_userManagement {
+    return Intl.message(
+      'User Management',
+      name: 'root_list_item_userManagement',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Home`
   String get home_title {
     return Intl.message(
@@ -650,10 +690,10 @@ class I18n {
     );
   }
 
-  /// `Address list`
+  /// `Address List`
   String get address_management_title {
     return Intl.message(
-      'Address list',
+      'Address List',
       name: 'address_management_title',
       desc: '',
       args: [],
@@ -795,6 +835,556 @@ class I18n {
     return Intl.message(
       'Edit Company',
       name: 'company_management_alert_dialog_edit_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Department List`
+  String get department_management_title {
+    return Intl.message(
+      'Department List',
+      name: 'department_management_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Department`
+  String get department_management_addButton {
+    return Intl.message(
+      'Add Department',
+      name: 'department_management_addButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get department_management_alert_dialog_name {
+    return Intl.message(
+      'Name',
+      name: 'department_management_alert_dialog_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Department`
+  String get department_management_alert_dialog_add_title {
+    return Intl.message(
+      'Add Department',
+      name: 'department_management_alert_dialog_add_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit Department`
+  String get department_management_alert_dialog_edit_title {
+    return Intl.message(
+      'Edit Department',
+      name: 'department_management_alert_dialog_edit_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Employment List`
+  String get employment_management_title {
+    return Intl.message(
+      'Employment List',
+      name: 'employment_management_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Employment`
+  String get employment_management_addButton {
+    return Intl.message(
+      'Add Employment',
+      name: 'employment_management_addButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get employment_management_alert_dialog_name {
+    return Intl.message(
+      'Name',
+      name: 'employment_management_alert_dialog_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Max Hours Per Day`
+  String get employment_management_alert_dialog_max_hours_per_day {
+    return Intl.message(
+      'Max Hours Per Day',
+      name: 'employment_management_alert_dialog_max_hours_per_day',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Max Hours Per Week`
+  String get employment_management_alert_dialog_max_hours_per_week {
+    return Intl.message(
+      'Max Hours Per Week',
+      name: 'employment_management_alert_dialog_max_hours_per_week',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Employment`
+  String get employment_management_alert_dialog_add_title {
+    return Intl.message(
+      'Add Employment',
+      name: 'employment_management_alert_dialog_add_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit Employment`
+  String get employment_management_alert_dialog_edit_title {
+    return Intl.message(
+      'Edit Employment',
+      name: 'employment_management_alert_dialog_edit_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Position List`
+  String get position_management_title {
+    return Intl.message(
+      'Position List',
+      name: 'position_management_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Position`
+  String get position_management_addButton {
+    return Intl.message(
+      'Add Position',
+      name: 'position_management_addButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get position_management_alert_dialog_name {
+    return Intl.message(
+      'Name',
+      name: 'position_management_alert_dialog_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Position`
+  String get position_management_alert_dialog_add_title {
+    return Intl.message(
+      'Add Position',
+      name: 'position_management_alert_dialog_add_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit Position`
+  String get position_management_alert_dialog_edit_title {
+    return Intl.message(
+      'Edit Position',
+      name: 'position_management_alert_dialog_edit_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User List`
+  String get user_management_title {
+    return Intl.message(
+      'User List',
+      name: 'user_management_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add User`
+  String get user_management_addButton {
+    return Intl.message(
+      'Add User',
+      name: 'user_management_addButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `First Name`
+  String get user_management_alert_dialog_firstName {
+    return Intl.message(
+      'First Name',
+      name: 'user_management_alert_dialog_firstName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Last Name`
+  String get user_management_alert_dialog_lastName {
+    return Intl.message(
+      'Last Name',
+      name: 'user_management_alert_dialog_lastName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get user_management_alert_dialog_email {
+    return Intl.message(
+      'Email',
+      name: 'user_management_alert_dialog_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get user_management_alert_dialog_password {
+    return Intl.message(
+      'Password',
+      name: 'user_management_alert_dialog_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add/Edit Addresses`
+  String get user_management_alert_dialog_addresses {
+    return Intl.message(
+      'Add/Edit Addresses',
+      name: 'user_management_alert_dialog_addresses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add/Edit Employment`
+  String get user_management_alert_dialog_employments {
+    return Intl.message(
+      'Add/Edit Employment',
+      name: 'user_management_alert_dialog_employments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add/Edit Managed Users`
+  String get user_management_alert_dialog_managed_users {
+    return Intl.message(
+      'Add/Edit Managed Users',
+      name: 'user_management_alert_dialog_managed_users',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add/Edit Roles`
+  String get user_management_alert_dialog_roles {
+    return Intl.message(
+      'Add/Edit Roles',
+      name: 'user_management_alert_dialog_roles',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add User`
+  String get user_management_alert_dialog_add_title {
+    return Intl.message(
+      'Add User',
+      name: 'user_management_alert_dialog_add_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit User`
+  String get user_management_alert_dialog_edit_title {
+    return Intl.message(
+      'Edit User',
+      name: 'user_management_alert_dialog_edit_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User Address List`
+  String get user_address_management_title {
+    return Intl.message(
+      'User Address List',
+      name: 'user_address_management_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Address`
+  String get user_address_management_addButton {
+    return Intl.message(
+      'Add Address',
+      name: 'user_address_management_addButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Address`
+  String get user_address_management_alert_dialog_address {
+    return Intl.message(
+      'Address',
+      name: 'user_address_management_alert_dialog_address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Is Remote`
+  String get user_address_management_alert_dialog_remote_checkbox {
+    return Intl.message(
+      'Is Remote',
+      name: 'user_address_management_alert_dialog_remote_checkbox',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add User Addresses`
+  String get user_address_management_alert_dialog_add_title {
+    return Intl.message(
+      'Add User Addresses',
+      name: 'user_address_management_alert_dialog_add_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit User Addresses`
+  String get user_address_management_alert_dialog_edit_title {
+    return Intl.message(
+      'Edit User Addresses',
+      name: 'user_address_management_alert_dialog_edit_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User Employment List`
+  String get user_employment_management_title {
+    return Intl.message(
+      'User Employment List',
+      name: 'user_employment_management_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Employment`
+  String get user_employment_management_addButton {
+    return Intl.message(
+      'Add Employment',
+      name: 'user_employment_management_addButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Employment`
+  String get user_employment_management_alert_dialog_employment {
+    return Intl.message(
+      'Employment',
+      name: 'user_employment_management_alert_dialog_employment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Company`
+  String get user_employment_management_alert_dialog_company {
+    return Intl.message(
+      'Company',
+      name: 'user_employment_management_alert_dialog_company',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Department`
+  String get user_employment_management_alert_dialog_department {
+    return Intl.message(
+      'Department',
+      name: 'user_employment_management_alert_dialog_department',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Position`
+  String get user_employment_management_alert_dialog_position {
+    return Intl.message(
+      'Position',
+      name: 'user_employment_management_alert_dialog_position',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Starting Date`
+  String get user_employment_management_alert_dialog_starting_date {
+    return Intl.message(
+      'Starting Date',
+      name: 'user_employment_management_alert_dialog_starting_date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ending Date`
+  String get user_employment_management_alert_dialog_ending_date {
+    return Intl.message(
+      'Ending Date',
+      name: 'user_employment_management_alert_dialog_ending_date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add User Employment`
+  String get user_employment_management_alert_dialog_add_title {
+    return Intl.message(
+      'Add User Employment',
+      name: 'user_employment_management_alert_dialog_add_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit User Employment`
+  String get user_employment_management_alert_dialog_edit_title {
+    return Intl.message(
+      'Edit User Employment',
+      name: 'user_employment_management_alert_dialog_edit_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User Manager List`
+  String get user_manager_management_title {
+    return Intl.message(
+      'User Manager List',
+      name: 'user_manager_management_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Managed User`
+  String get user_manager_management_addButton {
+    return Intl.message(
+      'Add Managed User',
+      name: 'user_manager_management_addButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User`
+  String get user_manager_management_alert_dialog_user {
+    return Intl.message(
+      'User',
+      name: 'user_manager_management_alert_dialog_user',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Managed User`
+  String get user_manager_management_alert_dialog_add_title {
+    return Intl.message(
+      'Add Managed User',
+      name: 'user_manager_management_alert_dialog_add_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit Managed User`
+  String get user_manager_management_alert_dialog_edit_title {
+    return Intl.message(
+      'Edit Managed User',
+      name: 'user_manager_management_alert_dialog_edit_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User Role List`
+  String get user_role_management_title {
+    return Intl.message(
+      'User Role List',
+      name: 'user_role_management_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Role`
+  String get user_role_management_addButton {
+    return Intl.message(
+      'Add Role',
+      name: 'user_role_management_addButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Role`
+  String get user_role_management_alert_dialog_name {
+    return Intl.message(
+      'Role',
+      name: 'user_role_management_alert_dialog_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Role`
+  String get user_role_management_alert_dialog_add_title {
+    return Intl.message(
+      'Add Role',
+      name: 'user_role_management_alert_dialog_add_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit Role`
+  String get user_role_management_alert_dialog_edit_title {
+    return Intl.message(
+      'Edit Role',
+      name: 'user_role_management_alert_dialog_edit_title',
       desc: '',
       args: [],
     );

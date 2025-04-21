@@ -91,7 +91,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       controller: _firstNameController,
                       labelText: I18n.of(context).profile_firstNameLabel,
                       hintText: I18n.of(context).profile_firstNameHint,
-                      onChanged: context.read<ProfileCubit>().onFirstNameChanged,
+                      onChanged:
+                          context.read<ProfileCubit>().onFirstNameChanged,
                       textInputAction: TextInputAction.done,
                       validator: validateName,
                     ),

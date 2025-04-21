@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mgr_frontend/src/core/theme/dimens.dart';
 
-
 class BasicCard extends StatelessWidget {
   const BasicCard({
     super.key,

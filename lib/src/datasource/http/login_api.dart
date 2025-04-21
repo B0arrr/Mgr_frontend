@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
-
-import '../models/User/user.dart';
-import '../models/login/login.dart';
+import 'package:mgr_frontend/src/datasource/models/User/user.dart';
+import 'package:mgr_frontend/src/datasource/models/login/login.dart';
 
 class LoginApi {
   final Dio dio;

@@ -1,13 +1,12 @@
 import 'package:mgr_frontend/src/datasource/http/dio_config.dart';
 import 'package:mgr_frontend/src/datasource/http/login_api.dart';
+import 'package:mgr_frontend/src/datasource/models/User/user.dart';
 import 'package:mgr_frontend/src/datasource/models/api_response/api_response.dart';
+import 'package:mgr_frontend/src/datasource/models/login/login.dart';
+import 'package:mgr_frontend/src/datasource/repositories/base_repository.dart';
+import 'package:mgr_frontend/src/shared/locator.dart';
 import 'package:mgr_frontend/src/shared/services/storage/local_storage.dart';
-
-import '../../shared/locator.dart';
-import '../../shared/services/storage/storage.dart';
-import '../models/User/user.dart';
-import '../models/login/login.dart';
-import 'base_repository.dart';
+import 'package:mgr_frontend/src/shared/services/storage/storage.dart';
 
 class LoginRepository extends BaseRepository {
   final LoginApi _loginApi;

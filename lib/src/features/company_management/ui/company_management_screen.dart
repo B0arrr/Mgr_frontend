@@ -94,34 +94,41 @@ class _CompanyManagementScreen extends State<CompanyManagementScreen> {
       builder: (dialogContext) {
         return AlertDialog(
           title: Text(I18n.of(context).address_management_title),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                  controller: nameController,
-                  decoration: InputDecoration(
-                      hintText: I18n.of(context)
-                          .company_management_alert_dialog_name)),
-              DropdownButton(
-                value: selectedAddressId,
-                hint: Text(
-                  I18n.of(context).company_management_alert_dialog_address,
-                  style: context.textTheme.bodyMedium,
-                ),
-                items: addressList.map((address) {
-                  return DropdownMenuItem(
-                    value: address.id,
-                    child: Text(
-                      '${address.street}, ${address.zip} ${address.city}, ${address.country}',
+          content: StatefulBuilder(
+            builder: (context, setState) {
+              return Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  TextField(
+                      controller: nameController,
+                      decoration: InputDecoration(
+                          hintText: I18n.of(context)
+                              .company_management_alert_dialog_name)),
+                  DropdownButton<int>(
+                    value: selectedAddressId,
+                    isExpanded: true,
+                    hint: Text(
+                      I18n.of(context).company_management_alert_dialog_address,
                       style: context.textTheme.bodyMedium,
                     ),
-                  );
-                }).toList(),
-                onChanged: (int? newValue) {
-                  selectedAddressId = newValue;
-                },
-              ),
-            ],
+                    items: addressList.map((address) {
+                      return DropdownMenuItem(
+                        value: address.id,
+                        child: Text(
+                          '${address.street}, ${address.zip} ${address.city}, ${address.country}',
+                          style: context.textTheme.bodyMedium,
+                        ),
+                      );
+                    }).toList(),
+                    onChanged: (int? newValue) {
+                      setState(() {
+                        selectedAddressId = newValue;
+                      });
+                    },
+                  ),
+                ],
+              );
+            },
           ),
           actions: [
             TextButton(
@@ -164,30 +171,41 @@ class _CompanyManagementScreen extends State<CompanyManagementScreen> {
         return AlertDialog(
           title:
               Text(I18n.of(context).address_management_alert_dialog_edit_title),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                  controller: nameController,
-                  decoration: InputDecoration(
-                      hintText: I18n.of(context)
-                          .company_management_alert_dialog_name)),
-              DropdownButton(
-                value: selectedAddressId,
-                hint: Text(
-                    I18n.of(context).company_management_alert_dialog_address),
-                items: addressList.map((address) {
-                  return DropdownMenuItem(
-                    value: address.id,
-                    child: Text(
-                        '${address.street}, ${address.zip} ${address.city}, ${address.country}'),
-                  );
-                }).toList(),
-                onChanged: (int? newValue) {
-                  selectedAddressId = newValue;
-                },
-              ),
-            ],
+          content: StatefulBuilder(
+            builder: (context, setState) {
+              return Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  TextField(
+                      controller: nameController,
+                      decoration: InputDecoration(
+                          hintText: I18n.of(context)
+                              .company_management_alert_dialog_name)),
+                  DropdownButton<int>(
+                    value: selectedAddressId,
+                    isExpanded: true,
+                    hint: Text(
+                      I18n.of(context).company_management_alert_dialog_address,
+                      style: context.textTheme.bodyMedium,
+                    ),
+                    items: addressList.map((address) {
+                      return DropdownMenuItem(
+                        value: address.id,
+                        child: Text(
+                          '${address.street}, ${address.zip} ${address.city}, ${address.country}',
+                          style: context.textTheme.bodyMedium,
+                        ),
+                      );
+                    }).toList(),
+                    onChanged: (int? newValue) {
+                      setState(() {
+                        selectedAddressId = newValue;
+                      });
+                    },
+                  ),
+                ],
+              );
+            },
           ),
           actions: [
             TextButton(

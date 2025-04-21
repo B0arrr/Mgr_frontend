@@ -1,8 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/constants/nav_bar_items.dart';
-
-
 part 'navigation_state.dart';
 
 class NavigationCubit extends Cubit<NavigationState> {

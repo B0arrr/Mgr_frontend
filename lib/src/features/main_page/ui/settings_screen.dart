@@ -46,12 +46,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 title: Text(I18n.of(context).settings_languageTitle),
                 subtitle: Text(I18n.of(context).settings_languageSubtitle),
                 trailing: DropdownButton<String>(
-                  value: context.read<ApplicationCubit>().state.language.toString(),
+                  value: context
+                      .read<ApplicationCubit>()
+                      .state
+                      .language
+                      .toString(),
                   items: [
-                    DropdownMenuItem(value: "en", child: Text(I18n.of(context).settings_en)),
+                    DropdownMenuItem(
+                        value: "en", child: Text(I18n.of(context).settings_en)),
                   ],
                   onChanged: (value) {
-                    context.read<ApplicationCubit>().changeLanguage(value ?? "en");
+                    context
+                        .read<ApplicationCubit>()
+                        .changeLanguage(value ?? "en");
                   },
                 ),
               ),

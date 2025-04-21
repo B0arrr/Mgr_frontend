@@ -39,7 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "address_management_alert_dialog_zipCode":
             MessageLookupByLibrary.simpleMessage("ZIP Code"),
         "address_management_title":
-            MessageLookupByLibrary.simpleMessage("Address list"),
+            MessageLookupByLibrary.simpleMessage("Address List"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "company_management_addButton":
             MessageLookupByLibrary.simpleMessage("Add Company"),
@@ -53,6 +53,30 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Name"),
         "company_management_title":
             MessageLookupByLibrary.simpleMessage("Company List"),
+        "department_management_addButton":
+            MessageLookupByLibrary.simpleMessage("Add Department"),
+        "department_management_alert_dialog_add_title":
+            MessageLookupByLibrary.simpleMessage("Add Department"),
+        "department_management_alert_dialog_edit_title":
+            MessageLookupByLibrary.simpleMessage("Edit Department"),
+        "department_management_alert_dialog_name":
+            MessageLookupByLibrary.simpleMessage("Name"),
+        "department_management_title":
+            MessageLookupByLibrary.simpleMessage("Department List"),
+        "employment_management_addButton":
+            MessageLookupByLibrary.simpleMessage("Add Employment"),
+        "employment_management_alert_dialog_add_title":
+            MessageLookupByLibrary.simpleMessage("Add Employment"),
+        "employment_management_alert_dialog_edit_title":
+            MessageLookupByLibrary.simpleMessage("Edit Employment"),
+        "employment_management_alert_dialog_max_hours_per_day":
+            MessageLookupByLibrary.simpleMessage("Max Hours Per Day"),
+        "employment_management_alert_dialog_max_hours_per_week":
+            MessageLookupByLibrary.simpleMessage("Max Hours Per Week"),
+        "employment_management_alert_dialog_name":
+            MessageLookupByLibrary.simpleMessage("Name"),
+        "employment_management_title":
+            MessageLookupByLibrary.simpleMessage("Employment List"),
         "form_password_not_match":
             MessageLookupByLibrary.simpleMessage("Passwords do not match!"),
         "form_submitted": MessageLookupByLibrary.simpleMessage(
@@ -90,6 +114,16 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Change Password"),
         "password_change_title":
             MessageLookupByLibrary.simpleMessage("Password Change"),
+        "position_management_addButton":
+            MessageLookupByLibrary.simpleMessage("Add Position"),
+        "position_management_alert_dialog_add_title":
+            MessageLookupByLibrary.simpleMessage("Add Position"),
+        "position_management_alert_dialog_edit_title":
+            MessageLookupByLibrary.simpleMessage("Edit Position"),
+        "position_management_alert_dialog_name":
+            MessageLookupByLibrary.simpleMessage("Name"),
+        "position_management_title":
+            MessageLookupByLibrary.simpleMessage("Position List"),
         "profile_changePassword":
             MessageLookupByLibrary.simpleMessage("Change password"),
         "profile_emailHint":
@@ -114,6 +148,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Addresses Management"),
         "root_list_item_companyManagement":
             MessageLookupByLibrary.simpleMessage("Company Management"),
+        "root_list_item_departmentManagement":
+            MessageLookupByLibrary.simpleMessage("Department Management"),
+        "root_list_item_employmentManagement":
+            MessageLookupByLibrary.simpleMessage("Employment Management"),
+        "root_list_item_positionManagement":
+            MessageLookupByLibrary.simpleMessage("Position Management"),
+        "root_list_item_userManagement":
+            MessageLookupByLibrary.simpleMessage("User Management"),
         "root_profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "root_settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "save": MessageLookupByLibrary.simpleMessage("Save"),
@@ -128,6 +170,82 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Language"),
         "settings_title": MessageLookupByLibrary.simpleMessage("Settings"),
         "title": MessageLookupByLibrary.simpleMessage("Test"),
+        "user_address_management_addButton":
+            MessageLookupByLibrary.simpleMessage("Add Address"),
+        "user_address_management_alert_dialog_add_title":
+            MessageLookupByLibrary.simpleMessage("Add User Addresses"),
+        "user_address_management_alert_dialog_address":
+            MessageLookupByLibrary.simpleMessage("Address"),
+        "user_address_management_alert_dialog_edit_title":
+            MessageLookupByLibrary.simpleMessage("Edit User Addresses"),
+        "user_address_management_alert_dialog_remote_checkbox":
+            MessageLookupByLibrary.simpleMessage("Is Remote"),
+        "user_address_management_title":
+            MessageLookupByLibrary.simpleMessage("User Address List"),
+        "user_employment_management_addButton":
+            MessageLookupByLibrary.simpleMessage("Add Employment"),
+        "user_employment_management_alert_dialog_add_title":
+            MessageLookupByLibrary.simpleMessage("Add User Employment"),
+        "user_employment_management_alert_dialog_company":
+            MessageLookupByLibrary.simpleMessage("Company"),
+        "user_employment_management_alert_dialog_department":
+            MessageLookupByLibrary.simpleMessage("Department"),
+        "user_employment_management_alert_dialog_edit_title":
+            MessageLookupByLibrary.simpleMessage("Edit User Employment"),
+        "user_employment_management_alert_dialog_employment":
+            MessageLookupByLibrary.simpleMessage("Employment"),
+        "user_employment_management_alert_dialog_ending_date":
+            MessageLookupByLibrary.simpleMessage("Ending Date"),
+        "user_employment_management_alert_dialog_position":
+            MessageLookupByLibrary.simpleMessage("Position"),
+        "user_employment_management_alert_dialog_starting_date":
+            MessageLookupByLibrary.simpleMessage("Starting Date"),
+        "user_employment_management_title":
+            MessageLookupByLibrary.simpleMessage("User Employment List"),
+        "user_management_addButton":
+            MessageLookupByLibrary.simpleMessage("Add User"),
+        "user_management_alert_dialog_add_title":
+            MessageLookupByLibrary.simpleMessage("Add User"),
+        "user_management_alert_dialog_addresses":
+            MessageLookupByLibrary.simpleMessage("Add/Edit Addresses"),
+        "user_management_alert_dialog_edit_title":
+            MessageLookupByLibrary.simpleMessage("Edit User"),
+        "user_management_alert_dialog_email":
+            MessageLookupByLibrary.simpleMessage("Email"),
+        "user_management_alert_dialog_employments":
+            MessageLookupByLibrary.simpleMessage("Add/Edit Employment"),
+        "user_management_alert_dialog_firstName":
+            MessageLookupByLibrary.simpleMessage("First Name"),
+        "user_management_alert_dialog_lastName":
+            MessageLookupByLibrary.simpleMessage("Last Name"),
+        "user_management_alert_dialog_managed_users":
+            MessageLookupByLibrary.simpleMessage("Add/Edit Managed Users"),
+        "user_management_alert_dialog_password":
+            MessageLookupByLibrary.simpleMessage("Password"),
+        "user_management_alert_dialog_roles":
+            MessageLookupByLibrary.simpleMessage("Add/Edit Roles"),
+        "user_management_title":
+            MessageLookupByLibrary.simpleMessage("User List"),
+        "user_manager_management_addButton":
+            MessageLookupByLibrary.simpleMessage("Add Managed User"),
+        "user_manager_management_alert_dialog_add_title":
+            MessageLookupByLibrary.simpleMessage("Add Managed User"),
+        "user_manager_management_alert_dialog_edit_title":
+            MessageLookupByLibrary.simpleMessage("Edit Managed User"),
+        "user_manager_management_alert_dialog_user":
+            MessageLookupByLibrary.simpleMessage("User"),
+        "user_manager_management_title":
+            MessageLookupByLibrary.simpleMessage("User Manager List"),
+        "user_role_management_addButton":
+            MessageLookupByLibrary.simpleMessage("Add Role"),
+        "user_role_management_alert_dialog_add_title":
+            MessageLookupByLibrary.simpleMessage("Add Role"),
+        "user_role_management_alert_dialog_edit_title":
+            MessageLookupByLibrary.simpleMessage("Edit Role"),
+        "user_role_management_alert_dialog_name":
+            MessageLookupByLibrary.simpleMessage("Role"),
+        "user_role_management_title":
+            MessageLookupByLibrary.simpleMessage("User Role List"),
         "validator_email":
             MessageLookupByLibrary.simpleMessage("Email is required"),
         "validator_emailValid":

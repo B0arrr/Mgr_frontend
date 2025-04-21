@@ -1,6 +1,5 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-
-import '../../locator.dart';
+import 'package:mgr_frontend/src/shared/locator.dart';
 
 class SecureStorage {
   final FlutterSecureStorage _storage;

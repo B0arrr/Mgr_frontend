@@ -44,7 +44,7 @@ mixin _$CompanyManagementEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitCompany value) initCompanies,
+    required TResult Function(_InitCompanies value) initCompanies,
     required TResult Function(_AddCompany value) addCompany,
     required TResult Function(_RemoveCompany value) removeCompany,
     required TResult Function(_UpdateCompany value) updateCompany,
@@ -52,7 +52,7 @@ mixin _$CompanyManagementEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitCompany value)? initCompanies,
+    TResult? Function(_InitCompanies value)? initCompanies,
     TResult? Function(_AddCompany value)? addCompany,
     TResult? Function(_RemoveCompany value)? removeCompany,
     TResult? Function(_UpdateCompany value)? updateCompany,
@@ -60,7 +60,7 @@ mixin _$CompanyManagementEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitCompany value)? initCompanies,
+    TResult Function(_InitCompanies value)? initCompanies,
     TResult Function(_AddCompany value)? addCompany,
     TResult Function(_RemoveCompany value)? removeCompany,
     TResult Function(_UpdateCompany value)? updateCompany,
@@ -92,18 +92,18 @@ class _$CompanyManagementEventCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$InitCompanyImplCopyWith<$Res> {
-  factory _$$InitCompanyImplCopyWith(
-          _$InitCompanyImpl value, $Res Function(_$InitCompanyImpl) then) =
-      __$$InitCompanyImplCopyWithImpl<$Res>;
+abstract class _$$InitCompaniesImplCopyWith<$Res> {
+  factory _$$InitCompaniesImplCopyWith(
+          _$InitCompaniesImpl value, $Res Function(_$InitCompaniesImpl) then) =
+      __$$InitCompaniesImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InitCompanyImplCopyWithImpl<$Res>
-    extends _$CompanyManagementEventCopyWithImpl<$Res, _$InitCompanyImpl>
-    implements _$$InitCompanyImplCopyWith<$Res> {
-  __$$InitCompanyImplCopyWithImpl(
-      _$InitCompanyImpl _value, $Res Function(_$InitCompanyImpl) _then)
+class __$$InitCompaniesImplCopyWithImpl<$Res>
+    extends _$CompanyManagementEventCopyWithImpl<$Res, _$InitCompaniesImpl>
+    implements _$$InitCompaniesImplCopyWith<$Res> {
+  __$$InitCompaniesImplCopyWithImpl(
+      _$InitCompaniesImpl _value, $Res Function(_$InitCompaniesImpl) _then)
       : super(_value, _then);
 
   /// Create a copy of CompanyManagementEvent
@@ -112,8 +112,8 @@ class __$$InitCompanyImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$InitCompanyImpl implements _InitCompany {
-  const _$InitCompanyImpl();
+class _$InitCompaniesImpl implements _InitCompanies {
+  const _$InitCompaniesImpl();
 
   @override
   String toString() {
@@ -123,7 +123,7 @@ class _$InitCompanyImpl implements _InitCompany {
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$InitCompanyImpl);
+        (other.runtimeType == runtimeType && other is _$InitCompaniesImpl);
   }
 
   @override
@@ -170,7 +170,7 @@ class _$InitCompanyImpl implements _InitCompany {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitCompany value) initCompanies,
+    required TResult Function(_InitCompanies value) initCompanies,
     required TResult Function(_AddCompany value) addCompany,
     required TResult Function(_RemoveCompany value) removeCompany,
     required TResult Function(_UpdateCompany value) updateCompany,
@@ -181,7 +181,7 @@ class _$InitCompanyImpl implements _InitCompany {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitCompany value)? initCompanies,
+    TResult? Function(_InitCompanies value)? initCompanies,
     TResult? Function(_AddCompany value)? addCompany,
     TResult? Function(_RemoveCompany value)? removeCompany,
     TResult? Function(_UpdateCompany value)? updateCompany,
@@ -192,7 +192,7 @@ class _$InitCompanyImpl implements _InitCompany {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitCompany value)? initCompanies,
+    TResult Function(_InitCompanies value)? initCompanies,
     TResult Function(_AddCompany value)? addCompany,
     TResult Function(_RemoveCompany value)? removeCompany,
     TResult Function(_UpdateCompany value)? updateCompany,
@@ -205,8 +205,8 @@ class _$InitCompanyImpl implements _InitCompany {
   }
 }
 
-abstract class _InitCompany implements CompanyManagementEvent {
-  const factory _InitCompany() = _$InitCompanyImpl;
+abstract class _InitCompanies implements CompanyManagementEvent {
+  const factory _InitCompanies() = _$InitCompaniesImpl;
 }
 
 /// @nodoc
@@ -327,7 +327,7 @@ class _$AddCompanyImpl implements _AddCompany {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitCompany value) initCompanies,
+    required TResult Function(_InitCompanies value) initCompanies,
     required TResult Function(_AddCompany value) addCompany,
     required TResult Function(_RemoveCompany value) removeCompany,
     required TResult Function(_UpdateCompany value) updateCompany,
@@ -338,7 +338,7 @@ class _$AddCompanyImpl implements _AddCompany {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitCompany value)? initCompanies,
+    TResult? Function(_InitCompanies value)? initCompanies,
     TResult? Function(_AddCompany value)? addCompany,
     TResult? Function(_RemoveCompany value)? removeCompany,
     TResult? Function(_UpdateCompany value)? updateCompany,
@@ -349,7 +349,7 @@ class _$AddCompanyImpl implements _AddCompany {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitCompany value)? initCompanies,
+    TResult Function(_InitCompanies value)? initCompanies,
     TResult Function(_AddCompany value)? addCompany,
     TResult Function(_RemoveCompany value)? removeCompany,
     TResult Function(_UpdateCompany value)? updateCompany,
@@ -492,7 +492,7 @@ class _$RemoveCompanyImpl implements _RemoveCompany {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitCompany value) initCompanies,
+    required TResult Function(_InitCompanies value) initCompanies,
     required TResult Function(_AddCompany value) addCompany,
     required TResult Function(_RemoveCompany value) removeCompany,
     required TResult Function(_UpdateCompany value) updateCompany,
@@ -503,7 +503,7 @@ class _$RemoveCompanyImpl implements _RemoveCompany {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitCompany value)? initCompanies,
+    TResult? Function(_InitCompanies value)? initCompanies,
     TResult? Function(_AddCompany value)? addCompany,
     TResult? Function(_RemoveCompany value)? removeCompany,
     TResult? Function(_UpdateCompany value)? updateCompany,
@@ -514,7 +514,7 @@ class _$RemoveCompanyImpl implements _RemoveCompany {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitCompany value)? initCompanies,
+    TResult Function(_InitCompanies value)? initCompanies,
     TResult Function(_AddCompany value)? addCompany,
     TResult Function(_RemoveCompany value)? removeCompany,
     TResult Function(_UpdateCompany value)? updateCompany,
@@ -679,7 +679,7 @@ class _$UpdateCompanyImpl implements _UpdateCompany {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitCompany value) initCompanies,
+    required TResult Function(_InitCompanies value) initCompanies,
     required TResult Function(_AddCompany value) addCompany,
     required TResult Function(_RemoveCompany value) removeCompany,
     required TResult Function(_UpdateCompany value) updateCompany,
@@ -690,7 +690,7 @@ class _$UpdateCompanyImpl implements _UpdateCompany {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitCompany value)? initCompanies,
+    TResult? Function(_InitCompanies value)? initCompanies,
     TResult? Function(_AddCompany value)? addCompany,
     TResult? Function(_RemoveCompany value)? removeCompany,
     TResult? Function(_UpdateCompany value)? updateCompany,
@@ -701,7 +701,7 @@ class _$UpdateCompanyImpl implements _UpdateCompany {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitCompany value)? initCompanies,
+    TResult Function(_InitCompanies value)? initCompanies,
     TResult Function(_AddCompany value)? addCompany,
     TResult Function(_RemoveCompany value)? removeCompany,
     TResult Function(_UpdateCompany value)? updateCompany,

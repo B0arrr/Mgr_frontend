@@ -2,7 +2,9 @@ import 'package:logger/logger.dart';
 
 class AppLogger {
   static final AppLogger _instance = AppLogger._internal();
+
   factory AppLogger() => _instance;
+
   AppLogger._internal();
 
   final _logger = Logger(

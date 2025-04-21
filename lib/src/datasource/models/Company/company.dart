@@ -13,5 +13,6 @@ class Company with _$Company {
     required Address? address,
   }) = _Company;
 
-  factory Company.fromJson(Map<String, Object?> json) => _$CompanyFromJson(json);
+  factory Company.fromJson(Map<String, Object?> json) =>
+      _$CompanyFromJson(json);
 }

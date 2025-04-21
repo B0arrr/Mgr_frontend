@@ -4,7 +4,6 @@ import 'package:mgr_frontend/src/shared/locator.dart';
 import 'package:mgr_frontend/src/shared/services/storage/local_storage.dart';
 import 'package:mgr_frontend/src/shared/services/storage/storage.dart';
 
-
 class AuthGuard extends AutoRouteGuard {
   final Storage _localStorage;
 

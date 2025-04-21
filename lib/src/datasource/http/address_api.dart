@@ -12,11 +12,11 @@ class AddressApi {
         .map((json) => Address.fromJson(json))
         .toList();
   }
-  
+
   Future<Address> getAddress(int id) async {
     final response = await dio.get('/address/$id');
     return Address.fromJson(response.data);
-  } 
+  }
 
   Future<Address> addAddress(Address address) async {
     final response = await dio.post('/address', data: address);

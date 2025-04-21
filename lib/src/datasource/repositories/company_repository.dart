@@ -31,7 +31,8 @@ class CompanyRepository extends BaseRepository {
     });
   }
 
-  Future<ApiResponse<Company, ApiError>> updateCompany(int id, Company company) async {
+  Future<ApiResponse<Company, ApiError>> updateCompany(
+      int id, Company company) async {
     return runApiCall(call: () async {
       final response = await _companyApi.updateCompany(id, company);
       return ApiResponse.success(response);

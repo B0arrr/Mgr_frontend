@@ -52,7 +52,7 @@ class ProfileCubit extends Cubit<ProfileState> {
       email: state.email,
     ));
 
-    final res = await _userRepository.getUser();
+    final res = await _userRepository.getLocalUser();
     res.when(
         success: (data) {
           user = data;
@@ -72,7 +72,7 @@ class ProfileCubit extends Cubit<ProfileState> {
               error: error,
             )));
 
-    final response = await _userRepository.updateUser(user);
+    final response = await _userRepository.updateLocalUser(user);
     response.when(
         success: (data) => emit(ProfileState.loaded(
               first_name: data.first_name,
