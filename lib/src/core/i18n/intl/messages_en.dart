@@ -156,6 +156,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Position Management"),
         "root_list_item_userManagement":
             MessageLookupByLibrary.simpleMessage("User Management"),
+        "root_list_item_userWorkingHourRegistration":
+            MessageLookupByLibrary.simpleMessage("Working time registration"),
         "root_profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "root_settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "save": MessageLookupByLibrary.simpleMessage("Save"),
@@ -246,6 +248,41 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Role"),
         "user_role_management_title":
             MessageLookupByLibrary.simpleMessage("User Role List"),
+        "user_working_time_registration_actions":
+            MessageLookupByLibrary.simpleMessage("Actions"),
+        "user_working_time_registration_alert_dialog_endTime":
+            MessageLookupByLibrary.simpleMessage("End Time"),
+        "user_working_time_registration_alert_dialog_error_end_before_start":
+            MessageLookupByLibrary.simpleMessage(
+                "End time must be after start time"),
+        "user_working_time_registration_alert_dialog_no_time_selected":
+            MessageLookupByLibrary.simpleMessage("Please select a time"),
+        "user_working_time_registration_alert_dialog_selected_time":
+            MessageLookupByLibrary.simpleMessage("Selected end time"),
+        "user_working_time_registration_alert_dialog_title":
+            MessageLookupByLibrary.simpleMessage("Edit User Registration"),
+        "user_working_time_registration_already_started":
+            MessageLookupByLibrary.simpleMessage(
+                "You already have an active work session today."),
+        "user_working_time_registration_endTime":
+            MessageLookupByLibrary.simpleMessage("End Time"),
+        "user_working_time_registration_end_work":
+            MessageLookupByLibrary.simpleMessage("End Work"),
+        "user_working_time_registration_hours":
+            MessageLookupByLibrary.simpleMessage("Hours"),
+        "user_working_time_registration_no_open_session":
+            MessageLookupByLibrary.simpleMessage(
+                "No open work session to end."),
+        "user_working_time_registration_search_hint":
+            MessageLookupByLibrary.simpleMessage("Search user"),
+        "user_working_time_registration_startTime":
+            MessageLookupByLibrary.simpleMessage("Start Time"),
+        "user_working_time_registration_start_work":
+            MessageLookupByLibrary.simpleMessage("Start Work"),
+        "user_working_time_registration_title":
+            MessageLookupByLibrary.simpleMessage("User Registration List"),
+        "user_working_time_registration_user":
+            MessageLookupByLibrary.simpleMessage("User"),
         "validator_email":
             MessageLookupByLibrary.simpleMessage("Email is required"),
         "validator_emailValid":

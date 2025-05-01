@@ -15,6 +15,7 @@
   "root_settings": "Settings",
   "root_profile": "Profile",
   "root_list_header": "Functionalities",
+  "root_list_item_userWorkingHourRegistration": "Working time registration",
   "root_list_item_addressesManagement": "Addresses Management",
   "root_list_item_companyManagement": "Company Management",
   "root_list_item_departmentManagement": "Department Management",
@@ -152,5 +153,22 @@
   "user_role_management_addButton": "Add Role",
   "user_role_management_alert_dialog_name": "Role",
   "user_role_management_alert_dialog_add_title": "Add Role",
-  "user_role_management_alert_dialog_edit_title": "Edit Role"
+  "user_role_management_alert_dialog_edit_title": "Edit Role",
+
+  "user_working_time_registration_title": "User Registration List",
+  "user_working_time_registration_search_hint": "Search user",
+  "user_working_time_registration_start_work": "Start Work",
+  "user_working_time_registration_end_work": "End Work",
+  "user_working_time_registration_no_open_session": "No open work session to end.",
+  "user_working_time_registration_already_started": "You already have an active work session today.",
+  "user_working_time_registration_user": "User",
+  "user_working_time_registration_startTime": "Start Time",
+  "user_working_time_registration_endTime": "End Time",
+  "user_working_time_registration_hours": "Hours",
+  "user_working_time_registration_actions": "Actions",
+  "user_working_time_registration_alert_dialog_endTime": "End Time",
+  "user_working_time_registration_alert_dialog_error_end_before_start": "End time must be after start time",
+  "user_working_time_registration_alert_dialog_no_time_selected": "Please select a time",
+  "user_working_time_registration_alert_dialog_selected_time": "Selected end time",
+  "user_working_time_registration_alert_dialog_title": "Edit User Registration"
 }

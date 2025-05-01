@@ -190,6 +190,16 @@ class I18n {
     );
   }
 
+  /// `Working time registration`
+  String get root_list_item_userWorkingHourRegistration {
+    return Intl.message(
+      'Working time registration',
+      name: 'root_list_item_userWorkingHourRegistration',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Addresses Management`
   String get root_list_item_addressesManagement {
     return Intl.message(
@@ -1385,6 +1395,168 @@ class I18n {
     return Intl.message(
       'Edit Role',
       name: 'user_role_management_alert_dialog_edit_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User Registration List`
+  String get user_working_time_registration_title {
+    return Intl.message(
+      'User Registration List',
+      name: 'user_working_time_registration_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search user`
+  String get user_working_time_registration_search_hint {
+    return Intl.message(
+      'Search user',
+      name: 'user_working_time_registration_search_hint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start Work`
+  String get user_working_time_registration_start_work {
+    return Intl.message(
+      'Start Work',
+      name: 'user_working_time_registration_start_work',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `End Work`
+  String get user_working_time_registration_end_work {
+    return Intl.message(
+      'End Work',
+      name: 'user_working_time_registration_end_work',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No open work session to end.`
+  String get user_working_time_registration_no_open_session {
+    return Intl.message(
+      'No open work session to end.',
+      name: 'user_working_time_registration_no_open_session',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You already have an active work session today.`
+  String get user_working_time_registration_already_started {
+    return Intl.message(
+      'You already have an active work session today.',
+      name: 'user_working_time_registration_already_started',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User`
+  String get user_working_time_registration_user {
+    return Intl.message(
+      'User',
+      name: 'user_working_time_registration_user',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start Time`
+  String get user_working_time_registration_startTime {
+    return Intl.message(
+      'Start Time',
+      name: 'user_working_time_registration_startTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `End Time`
+  String get user_working_time_registration_endTime {
+    return Intl.message(
+      'End Time',
+      name: 'user_working_time_registration_endTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hours`
+  String get user_working_time_registration_hours {
+    return Intl.message(
+      'Hours',
+      name: 'user_working_time_registration_hours',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Actions`
+  String get user_working_time_registration_actions {
+    return Intl.message(
+      'Actions',
+      name: 'user_working_time_registration_actions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `End Time`
+  String get user_working_time_registration_alert_dialog_endTime {
+    return Intl.message(
+      'End Time',
+      name: 'user_working_time_registration_alert_dialog_endTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `End time must be after start time`
+  String
+      get user_working_time_registration_alert_dialog_error_end_before_start {
+    return Intl.message(
+      'End time must be after start time',
+      name:
+          'user_working_time_registration_alert_dialog_error_end_before_start',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please select a time`
+  String get user_working_time_registration_alert_dialog_no_time_selected {
+    return Intl.message(
+      'Please select a time',
+      name: 'user_working_time_registration_alert_dialog_no_time_selected',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Selected end time`
+  String get user_working_time_registration_alert_dialog_selected_time {
+    return Intl.message(
+      'Selected end time',
+      name: 'user_working_time_registration_alert_dialog_selected_time',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit User Registration`
+  String get user_working_time_registration_alert_dialog_title {
+    return Intl.message(
+      'Edit User Registration',
+      name: 'user_working_time_registration_alert_dialog_title',
       desc: '',
       args: [],
     );

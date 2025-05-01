@@ -208,3 +208,57 @@ class UserManagementRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+/// generated route for
+/// [UserWorkingTimeRegistrationScreen]
+class UserWorkingTimeRegistrationRoute
+    extends PageRouteInfo<UserWorkingTimeRegistrationRouteArgs> {
+  UserWorkingTimeRegistrationRoute({
+    Key? key,
+    required int userId,
+    LocalStorage? localStorage,
+    List<PageRouteInfo>? children,
+  }) : super(
+          UserWorkingTimeRegistrationRoute.name,
+          args: UserWorkingTimeRegistrationRouteArgs(
+            key: key,
+            userId: userId,
+            localStorage: localStorage,
+          ),
+          initialChildren: children,
+        );
+
+  static const String name = 'UserWorkingTimeRegistrationRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<UserWorkingTimeRegistrationRouteArgs>();
+      return WrappedRoute(
+          child: UserWorkingTimeRegistrationScreen(
+        key: args.key,
+        userId: args.userId,
+        localStorage: args.localStorage,
+      ));
+    },
+  );
+}
+
+class UserWorkingTimeRegistrationRouteArgs {
+  const UserWorkingTimeRegistrationRouteArgs({
+    this.key,
+    required this.userId,
+    this.localStorage,
+  });
+
+  final Key? key;
+
+  final int userId;
+
+  final LocalStorage? localStorage;
+
+  @override
+  String toString() {
+    return 'UserWorkingTimeRegistrationRouteArgs{key: $key, userId: $userId, localStorage: $localStorage}';
+  }
+}

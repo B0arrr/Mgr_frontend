@@ -65,6 +65,17 @@ class _RootScreenState extends State<RootScreen> {
               decoration: BoxDecoration(color: context.colorScheme.secondary),
               child: Text(I18n.of(context).root_list_header),
             ),
+            ListTile(
+              title: Text(
+                  I18n.of(context).root_list_item_userWorkingHourRegistration),
+              onTap: () {
+                Navigator.pop(context);
+                context.router
+                    .push(UserWorkingTimeRegistrationRoute(userId: user!.id));
+              },
+            ),
+            if (roleNames!.any((role) => role == "Admin" || role == "Manager"))
+              Divider(),
             if (roleNames!.any((role) => role == "Admin" || role == "Manager"))
               ListTile(
                 title:

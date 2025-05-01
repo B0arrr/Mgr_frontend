@@ -15,6 +15,7 @@ import 'package:mgr_frontend/src/datasource/http/user_api.dart';
 import 'package:mgr_frontend/src/datasource/http/user_employment_api.dart';
 import 'package:mgr_frontend/src/datasource/http/user_manager_api.dart';
 import 'package:mgr_frontend/src/datasource/http/user_role_api.dart';
+import 'package:mgr_frontend/src/datasource/http/user_workhour_api.dart';
 import 'package:mgr_frontend/src/datasource/repositories/address_repository.dart';
 import 'package:mgr_frontend/src/datasource/repositories/company_repository.dart';
 import 'package:mgr_frontend/src/datasource/repositories/department_repository.dart';
@@ -28,6 +29,7 @@ import 'package:mgr_frontend/src/datasource/repositories/user_employment_reposit
 import 'package:mgr_frontend/src/datasource/repositories/user_manager_repository.dart';
 import 'package:mgr_frontend/src/datasource/repositories/user_repository.dart';
 import 'package:mgr_frontend/src/datasource/repositories/user_role_repository.dart';
+import 'package:mgr_frontend/src/datasource/repositories/user_workhour_repository.dart';
 import 'package:mgr_frontend/src/shared/services/app_logger.dart';
 import 'package:mgr_frontend/src/shared/services/storage/in_memory_storage.dart';
 import 'package:mgr_frontend/src/shared/services/storage/storage.dart';
@@ -66,4 +68,6 @@ final GetIt locator = GetIt.instance
   ..registerLazySingleton(() => UserManagerApi(dio: locator<DioConfig>().dio))
   ..registerLazySingleton(() => UserManagerRepository())
   ..registerLazySingleton(() => UserRoleApi(dio: locator<DioConfig>().dio))
-  ..registerLazySingleton(() => UserRoleRepository());
+  ..registerLazySingleton(() => UserRoleRepository())
+  ..registerLazySingleton(() => UserWorkHourApi(dio: locator<DioConfig>().dio))
+  ..registerLazySingleton(() => UserWorkHourRepository());
