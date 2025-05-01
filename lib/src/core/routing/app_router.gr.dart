@@ -144,10 +144,17 @@ class PositionManagementRoute extends PageRouteInfo<void> {
 
 /// generated route for
 /// [RootScreen]
-class RootRoute extends PageRouteInfo<void> {
-  const RootRoute({List<PageRouteInfo>? children})
-      : super(
+class RootRoute extends PageRouteInfo<RootRouteArgs> {
+  RootRoute({
+    Key? key,
+    LocalStorage? localStorage,
+    List<PageRouteInfo>? children,
+  }) : super(
           RootRoute.name,
+          args: RootRouteArgs(
+            key: key,
+            localStorage: localStorage,
+          ),
           initialChildren: children,
         );
 
@@ -156,9 +163,31 @@ class RootRoute extends PageRouteInfo<void> {
   static PageInfo page = PageInfo(
     name,
     builder: (data) {
-      return WrappedRoute(child: const RootScreen());
+      final args =
+          data.argsAs<RootRouteArgs>(orElse: () => const RootRouteArgs());
+      return WrappedRoute(
+          child: RootScreen(
+        key: args.key,
+        localStorage: args.localStorage,
+      ));
     },
   );
+}
+
+class RootRouteArgs {
+  const RootRouteArgs({
+    this.key,
+    this.localStorage,
+  });
+
+  final Key? key;
+
+  final LocalStorage? localStorage;
+
+  @override
+  String toString() {
+    return 'RootRouteArgs{key: $key, localStorage: $localStorage}';
+  }
 }
 
 /// generated route for

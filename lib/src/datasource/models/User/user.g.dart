@@ -14,6 +14,9 @@ _$UserImpl _$$UserImplFromJson(Map<String, dynamic> json) => _$UserImpl(
       password: json['password'] as String,
       is_active: json['is_active'] as bool,
       has_flexible_working_hours: json['has_flexible_working_hours'] as bool,
+      roles: (json['roles'] as List<dynamic>?)
+          ?.map((e) => Role.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$$UserImplToJson(_$UserImpl instance) =>
@@ -25,4 +28,5 @@ Map<String, dynamic> _$$UserImplToJson(_$UserImpl instance) =>
       'password': instance.password,
       'is_active': instance.is_active,
       'has_flexible_working_hours': instance.has_flexible_working_hours,
+      'roles': instance.roles,
     };

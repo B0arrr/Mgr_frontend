@@ -245,9 +245,9 @@ class _UserManagementScreen extends State<UserManagementScreen> {
                 Navigator.of(dialogContext).pop(
                   User(
                     id: user.id,
-                    first_name: user.first_name,
-                    last_name: user.last_name,
-                    email: user.email,
+                    first_name: firstNameController.text,
+                    last_name: lastNameController.text,
+                    email: emailController.text,
                     password: user.password,
                     is_active: user.is_active,
                     has_flexible_working_hours: user.has_flexible_working_hours,

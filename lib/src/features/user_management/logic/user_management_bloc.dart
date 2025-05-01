@@ -60,7 +60,7 @@ class UserManagementBloc
       response.when(
           success: (data) {
             final updatedUsers = state.users.map((user) {
-              return user == event.user ? data : event.user;
+              return user == event.user ? data : user;
             }).toList();
             emit(state.copyWith(users: updatedUsers));
           },

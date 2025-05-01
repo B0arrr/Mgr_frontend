@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter/material.dart';
 import 'package:mgr_frontend/src/core/routing/guards/auth_guard.dart';
 import 'package:mgr_frontend/src/features/address_management/ui/address_management_screen.dart';
 import 'package:mgr_frontend/src/features/company_management/ui/company_management_screen.dart';
@@ -9,6 +10,7 @@ import 'package:mgr_frontend/src/features/main_page/ui/password_change_screen.da
 import 'package:mgr_frontend/src/features/main_page/ui/root_screen.dart';
 import 'package:mgr_frontend/src/features/position_management/ui/position_management_screen.dart';
 import 'package:mgr_frontend/src/features/user_management/ui/user_management_screen.dart';
+import 'package:mgr_frontend/src/shared/services/storage/local_storage.dart';
 
 part 'app_router.gr.dart';
 

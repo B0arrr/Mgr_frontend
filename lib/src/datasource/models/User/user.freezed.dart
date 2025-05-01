@@ -35,6 +35,8 @@ mixin _$User {
   bool get has_flexible_working_hours => throw _privateConstructorUsedError;
   set has_flexible_working_hours(bool value) =>
       throw _privateConstructorUsedError;
+  List<Role>? get roles => throw _privateConstructorUsedError;
+  set roles(List<Role>? value) => throw _privateConstructorUsedError;
 
   /// Serializes this User to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -57,7 +59,8 @@ abstract class $UserCopyWith<$Res> {
       String email,
       String password,
       bool is_active,
-      bool has_flexible_working_hours});
+      bool has_flexible_working_hours,
+      List<Role>? roles});
 }
 
 /// @nodoc
@@ -82,6 +85,7 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
     Object? password = null,
     Object? is_active = null,
     Object? has_flexible_working_hours = null,
+    Object? roles = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -112,6 +116,10 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
           ? _value.has_flexible_working_hours
           : has_flexible_working_hours // ignore: cast_nullable_to_non_nullable
               as bool,
+      roles: freezed == roles
+          ? _value.roles
+          : roles // ignore: cast_nullable_to_non_nullable
+              as List<Role>?,
     ) as $Val);
   }
 }
@@ -130,7 +138,8 @@ abstract class _$$UserImplCopyWith<$Res> implements $UserCopyWith<$Res> {
       String email,
       String password,
       bool is_active,
-      bool has_flexible_working_hours});
+      bool has_flexible_working_hours,
+      List<Role>? roles});
 }
 
 /// @nodoc
@@ -152,6 +161,7 @@ class __$$UserImplCopyWithImpl<$Res>
     Object? password = null,
     Object? is_active = null,
     Object? has_flexible_working_hours = null,
+    Object? roles = freezed,
   }) {
     return _then(_$UserImpl(
       id: null == id
@@ -182,6 +192,10 @@ class __$$UserImplCopyWithImpl<$Res>
           ? _value.has_flexible_working_hours
           : has_flexible_working_hours // ignore: cast_nullable_to_non_nullable
               as bool,
+      roles: freezed == roles
+          ? _value.roles
+          : roles // ignore: cast_nullable_to_non_nullable
+              as List<Role>?,
     ));
   }
 }
@@ -196,7 +210,8 @@ class _$UserImpl implements _User {
       required this.email,
       required this.password,
       required this.is_active,
-      required this.has_flexible_working_hours});
+      required this.has_flexible_working_hours,
+      this.roles});
 
   factory _$UserImpl.fromJson(Map<String, dynamic> json) =>
       _$$UserImplFromJson(json);
@@ -215,10 +230,12 @@ class _$UserImpl implements _User {
   bool is_active;
   @override
   bool has_flexible_working_hours;
+  @override
+  List<Role>? roles;
 
   @override
   String toString() {
-    return 'User(id: $id, first_name: $first_name, last_name: $last_name, email: $email, password: $password, is_active: $is_active, has_flexible_working_hours: $has_flexible_working_hours)';
+    return 'User(id: $id, first_name: $first_name, last_name: $last_name, email: $email, password: $password, is_active: $is_active, has_flexible_working_hours: $has_flexible_working_hours, roles: $roles)';
   }
 
   /// Create a copy of User
@@ -245,7 +262,8 @@ abstract class _User implements User {
       required String email,
       required String password,
       required bool is_active,
-      required bool has_flexible_working_hours}) = _$UserImpl;
+      required bool has_flexible_working_hours,
+      List<Role>? roles}) = _$UserImpl;
 
   factory _User.fromJson(Map<String, dynamic> json) = _$UserImpl.fromJson;
 
@@ -270,6 +288,9 @@ abstract class _User implements User {
   @override
   bool get has_flexible_working_hours;
   set has_flexible_working_hours(bool value);
+  @override
+  List<Role>? get roles;
+  set roles(List<Role>? value);
 
   /// Create a copy of User
   /// with the given fields replaced by the non-null parameter values.

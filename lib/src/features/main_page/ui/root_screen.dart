@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mgr_frontend/src/core/i18n/l10n.dart';
 import 'package:mgr_frontend/src/core/routing/app_router.dart';
+import 'package:mgr_frontend/src/datasource/models/User/user.dart';
 import 'package:mgr_frontend/src/features/login/logic/login_cubit.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/constants/nav_bar_items.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/navigation/navigation_cubit.dart';
@@ -12,10 +13,16 @@ import 'package:mgr_frontend/src/features/main_page/ui/home_screen.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/profile_screen.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/settings_screen.dart';
 import 'package:mgr_frontend/src/shared/extensions/context_extensions.dart';
+import 'package:mgr_frontend/src/shared/locator.dart';
+import 'package:mgr_frontend/src/shared/services/storage/local_storage.dart';
+import 'package:mgr_frontend/src/shared/services/storage/storage.dart';
 
 @RoutePage()
 class RootScreen extends StatefulWidget implements AutoRouteWrapper {
-  const RootScreen({super.key});
+  final Storage _localStorage;
+
+  RootScreen({super.key, LocalStorage? localStorage})
+      : _localStorage = localStorage ?? locator<Storage>();
 
   @override
   State<RootScreen> createState() => _RootScreenState();
@@ -35,6 +42,15 @@ class RootScreen extends StatefulWidget implements AutoRouteWrapper {
 }
 
 class _RootScreenState extends State<RootScreen> {
+  User? user;
+  List<String>? roleNames;
+
+  @override
+  void initState() {
+    _loadUser();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,48 +65,57 @@ class _RootScreenState extends State<RootScreen> {
               decoration: BoxDecoration(color: context.colorScheme.secondary),
               child: Text(I18n.of(context).root_list_header),
             ),
-            ListTile(
-              title: Text(I18n.of(context).root_list_item_addressesManagement),
-              onTap: () {
-                Navigator.pop(context);
-                context.router.push(AddressManagementRoute());
-              },
-            ),
-            ListTile(
-              title: Text(I18n.of(context).root_list_item_companyManagement),
-              onTap: () {
-                Navigator.pop(context);
-                context.router.push(CompanyManagementRoute());
-              },
-            ),
-            ListTile(
-              title: Text(I18n.of(context).root_list_item_departmentManagement),
-              onTap: () {
-                Navigator.pop(context);
-                context.router.push(DepartmentManagementRoute());
-              },
-            ),
-            ListTile(
-              title: Text(I18n.of(context).root_list_item_employmentManagement),
-              onTap: () {
-                Navigator.pop(context);
-                context.router.push(EmploymentManagementRoute());
-              },
-            ),
-            ListTile(
-              title: Text(I18n.of(context).root_list_item_positionManagement),
-              onTap: () {
-                Navigator.pop(context);
-                context.router.push(PositionManagementRoute());
-              },
-            ),
-            ListTile(
-              title: Text(I18n.of(context).root_list_item_userManagement),
-              onTap: () {
-                Navigator.pop(context);
-                context.router.push(UserManagementRoute());
-              },
-            ),
+            if (roleNames!.any((role) => role == "Admin" || role == "Manager"))
+              ListTile(
+                title:
+                    Text(I18n.of(context).root_list_item_addressesManagement),
+                onTap: () {
+                  Navigator.pop(context);
+                  context.router.push(AddressManagementRoute());
+                },
+              ),
+            if (roleNames!.any((role) => role == "Admin" || role == "Manager"))
+              ListTile(
+                title: Text(I18n.of(context).root_list_item_companyManagement),
+                onTap: () {
+                  Navigator.pop(context);
+                  context.router.push(CompanyManagementRoute());
+                },
+              ),
+            if (roleNames!.any((role) => role == "Admin" || role == "Manager"))
+              ListTile(
+                title:
+                    Text(I18n.of(context).root_list_item_departmentManagement),
+                onTap: () {
+                  Navigator.pop(context);
+                  context.router.push(DepartmentManagementRoute());
+                },
+              ),
+            if (roleNames!.any((role) => role == "Admin" || role == "Manager"))
+              ListTile(
+                title:
+                    Text(I18n.of(context).root_list_item_employmentManagement),
+                onTap: () {
+                  Navigator.pop(context);
+                  context.router.push(EmploymentManagementRoute());
+                },
+              ),
+            if (roleNames!.any((role) => role == "Admin" || role == "Manager"))
+              ListTile(
+                title: Text(I18n.of(context).root_list_item_positionManagement),
+                onTap: () {
+                  Navigator.pop(context);
+                  context.router.push(PositionManagementRoute());
+                },
+              ),
+            if (roleNames!.any((role) => role == "Admin" || role == "Manager"))
+              ListTile(
+                title: Text(I18n.of(context).root_list_item_userManagement),
+                onTap: () {
+                  Navigator.pop(context);
+                  context.router.push(UserManagementRoute());
+                },
+              ),
             Divider(),
             ListTile(
               title: Text(I18n.of(context).logout),
@@ -152,5 +177,15 @@ class _RootScreenState extends State<RootScreen> {
         },
       ),
     );
+  }
+
+  Future<void> _loadUser() async {
+    final usr = await widget._localStorage.getUser();
+    setState(() {
+      user = usr;
+    });
+    setState(() {
+      roleNames = user!.roles!.map((role) => role.name).toList();
+    });
   }
 }
