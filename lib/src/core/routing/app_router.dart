@@ -9,8 +9,9 @@ import 'package:mgr_frontend/src/features/login/ui/login_screen.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/password_change_screen.dart';
 import 'package:mgr_frontend/src/features/main_page/ui/root_screen.dart';
 import 'package:mgr_frontend/src/features/position_management/ui/position_management_screen.dart';
-import 'package:mgr_frontend/src/features/user%20working%20time%20registration/ui/user_working_time_registration_screen.dart';
+import 'package:mgr_frontend/src/features/scheduler/ui/scheduler_screen.dart';
 import 'package:mgr_frontend/src/features/user_management/ui/user_management_screen.dart';
+import 'package:mgr_frontend/src/features/user_working_time_registration/ui/user_working_time_registration_screen.dart';
 import 'package:mgr_frontend/src/shared/services/storage/local_storage.dart';
 
 part 'app_router.gr.dart';
@@ -49,5 +50,6 @@ class AppRouter extends RootStackRouter {
         page: UserWorkingTimeRegistrationRoute.page,
         initial: false,
         guards: [AuthGuard()]),
+    AutoRoute(page: SchedulerRoute.page, initial: false, guards: [AuthGuard()]),
   ];
 }

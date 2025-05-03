@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mgr_frontend/src/core/i18n/l10n.dart';
 import 'package:mgr_frontend/src/datasource/models/User/user.dart';
 import 'package:mgr_frontend/src/datasource/models/UserWorkhour/user_workhour.dart';
-import 'package:mgr_frontend/src/features/user%20working%20time%20registration/logic/user_working_time_registration_blob.dart';
+import 'package:mgr_frontend/src/features/user_working_time_registration/logic/user_working_time_registration_blob.dart';
 import 'package:mgr_frontend/src/shared/locator.dart';
 import 'package:mgr_frontend/src/shared/services/storage/local_storage.dart';
 import 'package:mgr_frontend/src/shared/services/storage/storage.dart';
