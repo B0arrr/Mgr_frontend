@@ -200,6 +200,16 @@ class I18n {
     );
   }
 
+  /// `Scheduler`
+  String get root_list_item_scheduler {
+    return Intl.message(
+      'Scheduler',
+      name: 'root_list_item_scheduler',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Addresses Management`
   String get root_list_item_addressesManagement {
     return Intl.message(

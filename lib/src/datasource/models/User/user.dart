@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:mgr_frontend/src/datasource/models/Role/role.dart';
+import 'package:mgr_frontend/src/datasource/models/UserEmployment/user_employment.dart';
 
 part 'user.freezed.dart';
 part 'user.g.dart';
@@ -15,6 +16,7 @@ class User with _$User {
     required bool is_active,
     required bool has_flexible_working_hours,
     List<Role>? roles,
+    List<UserEmployment>? user_employments,
   }) = _User;
 
   factory User.fromJson(Map<String, Object?> json) => _$UserFromJson(json);

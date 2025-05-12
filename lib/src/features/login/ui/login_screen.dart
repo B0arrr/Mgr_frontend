@@ -119,45 +119,45 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
               ),
-              const Gap.vertical(height: Dimens.spacing),
-              Align(
-                alignment: Alignment.centerRight,
-                child: TextButton(
-                  onPressed: () {},
-                  child: Text(I18n.of(context).login_forgotPasswordLabel),
-                ),
-              ),
+              // const Gap.vertical(height: Dimens.spacing),
+              // Align(
+              //   alignment: Alignment.centerRight,
+              //   child: TextButton(
+              //     onPressed: () {},
+              //     child: Text(I18n.of(context).login_forgotPasswordLabel),
+              //   ),
+              // ),
               const Gap.vertical(height: Dimens.spacing),
               Button.primary(
                 title: I18n.of(context).login_submitBtnLabel,
                 onPressed: _onLogin,
               ),
-              const Gap.vertical(height: Dimens.doubleSpacing),
-              LabeledDivider(
-                label: I18n.of(context).or,
-              ),
-              const Gap.vertical(height: Dimens.doubleSpacing),
-              Button.outline(
-                icon: SvgPicture.asset(
-                  Assets.images.googleLogo,
-                  width: Dimens.iconSize,
-                  height: Dimens.iconSize,
-                ),
-                title: I18n.of(context).login_googleBtnLabel,
-                onPressed: () {},
-              ),
-              const Gap.vertical(height: Dimens.spacing),
-              Button.outline(
-                icon: SvgPicture.asset(
-                  Assets.images.appleLogo,
-                  colorFilter: ColorFilter.mode(
-                      context.colorScheme.onSurface, BlendMode.srcIn),
-                  width: Dimens.iconSize,
-                  height: Dimens.iconSize,
-                ),
-                title: I18n.of(context).login_appleBtnLabel,
-                onPressed: () {},
-              )
+              // const Gap.vertical(height: Dimens.doubleSpacing),
+              // LabeledDivider(
+              //   label: I18n.of(context).or,
+              // ),
+              // const Gap.vertical(height: Dimens.doubleSpacing),
+              // Button.outline(
+              //   icon: SvgPicture.asset(
+              //     Assets.images.googleLogo,
+              //     width: Dimens.iconSize,
+              //     height: Dimens.iconSize,
+              //   ),
+              //   title: I18n.of(context).login_googleBtnLabel,
+              //   onPressed: () {},
+              // ),
+              // const Gap.vertical(height: Dimens.spacing),
+              // Button.outline(
+              //   icon: SvgPicture.asset(
+              //     Assets.images.appleLogo,
+              //     colorFilter: ColorFilter.mode(
+              //         context.colorScheme.onSurface, BlendMode.srcIn),
+              //     width: Dimens.iconSize,
+              //     height: Dimens.iconSize,
+              //   ),
+              //   title: I18n.of(context).login_appleBtnLabel,
+              //   onPressed: () {},
+              // )
             ],
           ),
         ),

@@ -74,6 +74,15 @@ class _RootScreenState extends State<RootScreen> {
                     .push(UserWorkingTimeRegistrationRoute(userId: user!.id));
               },
             ),
+            ListTile(
+              title: Text(
+                  I18n.of(context).root_list_item_scheduler),
+              onTap: () {
+                Navigator.pop(context);
+                context.router
+                    .push(SchedulerRoute(userId: user!.id));
+              },
+            ),
             if (roleNames!.any((role) => role == "Admin" || role == "Manager"))
               Divider(),
             if (roleNames!.any((role) => role == "Admin" || role == "Manager"))

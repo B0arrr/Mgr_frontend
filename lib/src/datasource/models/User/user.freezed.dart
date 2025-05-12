@@ -37,6 +37,10 @@ mixin _$User {
       throw _privateConstructorUsedError;
   List<Role>? get roles => throw _privateConstructorUsedError;
   set roles(List<Role>? value) => throw _privateConstructorUsedError;
+  List<UserEmployment>? get user_employments =>
+      throw _privateConstructorUsedError;
+  set user_employments(List<UserEmployment>? value) =>
+      throw _privateConstructorUsedError;
 
   /// Serializes this User to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -60,7 +64,8 @@ abstract class $UserCopyWith<$Res> {
       String password,
       bool is_active,
       bool has_flexible_working_hours,
-      List<Role>? roles});
+      List<Role>? roles,
+      List<UserEmployment>? user_employments});
 }
 
 /// @nodoc
@@ -86,6 +91,7 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
     Object? is_active = null,
     Object? has_flexible_working_hours = null,
     Object? roles = freezed,
+    Object? user_employments = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -120,6 +126,10 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
           ? _value.roles
           : roles // ignore: cast_nullable_to_non_nullable
               as List<Role>?,
+      user_employments: freezed == user_employments
+          ? _value.user_employments
+          : user_employments // ignore: cast_nullable_to_non_nullable
+              as List<UserEmployment>?,
     ) as $Val);
   }
 }
@@ -139,7 +149,8 @@ abstract class _$$UserImplCopyWith<$Res> implements $UserCopyWith<$Res> {
       String password,
       bool is_active,
       bool has_flexible_working_hours,
-      List<Role>? roles});
+      List<Role>? roles,
+      List<UserEmployment>? user_employments});
 }
 
 /// @nodoc
@@ -162,6 +173,7 @@ class __$$UserImplCopyWithImpl<$Res>
     Object? is_active = null,
     Object? has_flexible_working_hours = null,
     Object? roles = freezed,
+    Object? user_employments = freezed,
   }) {
     return _then(_$UserImpl(
       id: null == id
@@ -196,6 +208,10 @@ class __$$UserImplCopyWithImpl<$Res>
           ? _value.roles
           : roles // ignore: cast_nullable_to_non_nullable
               as List<Role>?,
+      user_employments: freezed == user_employments
+          ? _value.user_employments
+          : user_employments // ignore: cast_nullable_to_non_nullable
+              as List<UserEmployment>?,
     ));
   }
 }
@@ -211,7 +227,8 @@ class _$UserImpl implements _User {
       required this.password,
       required this.is_active,
       required this.has_flexible_working_hours,
-      this.roles});
+      this.roles,
+      this.user_employments});
 
   factory _$UserImpl.fromJson(Map<String, dynamic> json) =>
       _$$UserImplFromJson(json);
@@ -232,10 +249,12 @@ class _$UserImpl implements _User {
   bool has_flexible_working_hours;
   @override
   List<Role>? roles;
+  @override
+  List<UserEmployment>? user_employments;
 
   @override
   String toString() {
-    return 'User(id: $id, first_name: $first_name, last_name: $last_name, email: $email, password: $password, is_active: $is_active, has_flexible_working_hours: $has_flexible_working_hours, roles: $roles)';
+    return 'User(id: $id, first_name: $first_name, last_name: $last_name, email: $email, password: $password, is_active: $is_active, has_flexible_working_hours: $has_flexible_working_hours, roles: $roles, user_employments: $user_employments)';
   }
 
   /// Create a copy of User
@@ -263,7 +282,8 @@ abstract class _User implements User {
       required String password,
       required bool is_active,
       required bool has_flexible_working_hours,
-      List<Role>? roles}) = _$UserImpl;
+      List<Role>? roles,
+      List<UserEmployment>? user_employments}) = _$UserImpl;
 
   factory _User.fromJson(Map<String, dynamic> json) = _$UserImpl.fromJson;
 
@@ -291,6 +311,9 @@ abstract class _User implements User {
   @override
   List<Role>? get roles;
   set roles(List<Role>? value);
+  @override
+  List<UserEmployment>? get user_employments;
+  set user_employments(List<UserEmployment>? value);
 
   /// Create a copy of User
   /// with the given fields replaced by the non-null parameter values.

@@ -16,6 +16,7 @@
   "root_profile": "Profile",
   "root_list_header": "Functionalities",
   "root_list_item_userWorkingHourRegistration": "Working time registration",
+  "root_list_item_scheduler": "Scheduler",
   "root_list_item_addressesManagement": "Addresses Management",
   "root_list_item_companyManagement": "Company Management",
   "root_list_item_departmentManagement": "Department Management",

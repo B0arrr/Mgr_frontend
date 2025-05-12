@@ -191,6 +191,53 @@ class RootRouteArgs {
 }
 
 /// generated route for
+/// [SchedulerScreen]
+class SchedulerRoute extends PageRouteInfo<SchedulerRouteArgs> {
+  SchedulerRoute({
+    Key? key,
+    required int userId,
+    List<PageRouteInfo>? children,
+  }) : super(
+          SchedulerRoute.name,
+          args: SchedulerRouteArgs(
+            key: key,
+            userId: userId,
+          ),
+          initialChildren: children,
+        );
+
+  static const String name = 'SchedulerRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<SchedulerRouteArgs>();
+      return WrappedRoute(
+          child: SchedulerScreen(
+        key: args.key,
+        userId: args.userId,
+      ));
+    },
+  );
+}
+
+class SchedulerRouteArgs {
+  const SchedulerRouteArgs({
+    this.key,
+    required this.userId,
+  });
+
+  final Key? key;
+
+  final int userId;
+
+  @override
+  String toString() {
+    return 'SchedulerRouteArgs{key: $key, userId: $userId}';
+  }
+}
+
+/// generated route for
 /// [UserManagementScreen]
 class UserManagementRoute extends PageRouteInfo<void> {
   const UserManagementRoute({List<PageRouteInfo>? children})

@@ -154,6 +154,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Employment Management"),
         "root_list_item_positionManagement":
             MessageLookupByLibrary.simpleMessage("Position Management"),
+        "root_list_item_scheduler":
+            MessageLookupByLibrary.simpleMessage("Scheduler"),
         "root_list_item_userManagement":
             MessageLookupByLibrary.simpleMessage("User Management"),
         "root_list_item_userWorkingHourRegistration":

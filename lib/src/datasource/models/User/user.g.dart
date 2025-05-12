@@ -17,6 +17,9 @@ _$UserImpl _$$UserImplFromJson(Map<String, dynamic> json) => _$UserImpl(
       roles: (json['roles'] as List<dynamic>?)
           ?.map((e) => Role.fromJson(e as Map<String, dynamic>))
           .toList(),
+      user_employments: (json['user_employments'] as List<dynamic>?)
+          ?.map((e) => UserEmployment.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$$UserImplToJson(_$UserImpl instance) =>
@@ -29,4 +32,5 @@ Map<String, dynamic> _$$UserImplToJson(_$UserImpl instance) =>
       'is_active': instance.is_active,
       'has_flexible_working_hours': instance.has_flexible_working_hours,
       'roles': instance.roles,
+      'user_employments': instance.user_employments,
     };
