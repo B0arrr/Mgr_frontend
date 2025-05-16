@@ -16,7 +16,6 @@ class User with _$User {
     required bool is_active,
     required bool has_flexible_working_hours,
     List<Role>? roles,
-    List<UserEmployment>? user_employments,
   }) = _User;
 
   factory User.fromJson(Map<String, Object?> json) => _$UserFromJson(json);

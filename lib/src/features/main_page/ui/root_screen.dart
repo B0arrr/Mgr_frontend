@@ -6,6 +6,7 @@ import 'package:mgr_frontend/src/core/routing/app_router.dart';
 import 'package:mgr_frontend/src/datasource/models/User/user.dart';
 import 'package:mgr_frontend/src/features/login/logic/login_cubit.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/constants/nav_bar_items.dart';
+import 'package:mgr_frontend/src/features/main_page/logic/home/home_cubit.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/navigation/navigation_cubit.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/profile/profile_cubit.dart';
 import 'package:mgr_frontend/src/features/main_page/logic/root_cubit.dart';
@@ -35,6 +36,7 @@ class RootScreen extends StatefulWidget implements AutoRouteWrapper {
         BlocProvider(create: (_) => NavigationCubit()),
         BlocProvider(create: (_) => LoginCubit()),
         BlocProvider(create: (_) => ProfileCubit()),
+        BlocProvider(create: (_) => HomeCubit()),
       ],
       child: this,
     );
