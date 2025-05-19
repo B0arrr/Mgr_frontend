@@ -93,7 +93,7 @@ class _CompanyManagementScreen extends State<CompanyManagementScreen> {
       context: context,
       builder: (dialogContext) {
         return AlertDialog(
-          title: Text(I18n.of(context).address_management_title),
+          title: Text(I18n.of(context).company_management_alert_dialog_add_title),
           content: StatefulBuilder(
             builder: (context, setState) {
               return Column(
@@ -170,7 +170,7 @@ class _CompanyManagementScreen extends State<CompanyManagementScreen> {
       builder: (dialogContext) {
         return AlertDialog(
           title:
-              Text(I18n.of(context).address_management_alert_dialog_edit_title),
+              Text(I18n.of(context).company_management_alert_dialog_edit_title),
           content: StatefulBuilder(
             builder: (context, setState) {
               return Column(

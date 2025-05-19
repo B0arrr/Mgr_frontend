@@ -61,7 +61,6 @@ class _SchedulerScreen extends State<SchedulerScreen> {
           ),
           body: Row(
             children: [
-              // Left side: user list
               Expanded(
                 flex: 2,
                 child: ListView(
@@ -86,8 +85,6 @@ class _SchedulerScreen extends State<SchedulerScreen> {
                   }).toList(),
                 ),
               ),
-
-              // Right side: calendar with drag target overlay
               Expanded(
                 flex: 5,
                 child: Stack(

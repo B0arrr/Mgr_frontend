@@ -178,7 +178,7 @@ class _UserAddressManagementScreen extends State<UserAddressManagementScreen> {
       context: context,
       builder: (dialogContext) {
         return AlertDialog(
-          title: Text(I18n.of(context).user_management_alert_dialog_edit_title),
+          title: Text(I18n.of(context).user_address_management_alert_dialog_edit_title),
           content: StatefulBuilder(
             builder: (context, setState) {
               return Column(

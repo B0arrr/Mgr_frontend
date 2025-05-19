@@ -122,7 +122,7 @@ class _AddressManagementScreenState extends State<AddressManagementScreen> {
                   controller: countryController,
                   decoration: InputDecoration(
                       hintText: I18n.of(context)
-                          .address_management_alert_dialog_city)),
+                          .address_management_alert_dialog_country)),
             ],
           ),
           actions: [
